@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Form Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>PDF Form Manager</h1>
+            <div class="mode-switch">
+                <label>
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="mdi mdi-weather-night"></span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <div class="pdf-container">
+                <div class="toolbar">
+                    <button id="uploadBtn" class="btn primary">
+                        <span class="mdi mdi-upload"></span>
+                        Upload PDF
+                    </button>
+                    <button id="addFieldBtn" class="btn secondary" disabled>
+                        <span class="mdi mdi-plus"></span>
+                        Add Field
+                    </button>
+                    <button id="saveBtn" class="btn primary" disabled>
+                        <span class="mdi mdi-content-save"></span>
+                        Save Template
+                    </button>
+                </div>
+                <div class="viewer-container">
+                    <canvas id="pdfViewer"></canvas>
+                    <div id="fieldOverlay" class="field-overlay"></div>
+                </div>
+            </div>
+            <div class="field-list">
+                <h2>Form Fields</h2>
+                <div id="fieldList"></div>
+            </div>
+        </main>
+
+        <!-- Field Creation Modal -->
+        <div id="fieldModal" class="modal">
+            <div class="modal-content">
+                <h2>Add New Field</h2>
+                <form id="fieldForm">
+                    <div class="form-group">
+                        <label for="fieldName">Field Name:</label>
+                        <input type="text" id="fieldName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fieldType">Field Type:</label>
+                        <select id="fieldType">
+                            <option value="text">Text</option>
+                            <option value="number">Number</option>
+                            <option value="date">Date</option>
+                        </select>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn secondary" onclick="closeFieldModal()">Cancel</button>
+                        <button type="submit" class="btn primary">Add Field</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
