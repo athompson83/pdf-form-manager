@@ -1,0 +1,32 @@
+export const mockWebhooks = [
+  {
+    id: '1',
+    name: 'Form Submission Webhook',
+    url: 'https://example.com/webhook1',
+    active: true,
+    createdAt: '2023-01-01T00:00:00Z',
+    lastTriggered: '2023-01-02T00:00:00Z',
+    successCount: 10,
+    failureCount: 0,
+  },
+  {
+    id: '2',
+    name: 'Data Sync Webhook',
+    url: 'https://example.com/webhook2',
+    active: true,
+    createdAt: '2023-01-01T00:00:00Z',
+    lastTriggered: '2023-01-02T00:00:00Z',
+    successCount: 8,
+    failureCount: 2,
+  },
+  {
+    id: '3',
+    name: 'Error Notification Webhook',
+    url: 'https://example.com/webhook3',
+    active: false,
+    createdAt: '2023-01-01T00:00:00Z',
+    lastTriggered: null,
+    successCount: 0,
+    failureCount: 0,
+  },
+];
