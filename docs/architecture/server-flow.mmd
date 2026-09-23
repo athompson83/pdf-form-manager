@@ -1,0 +1,14 @@
+sequenceDiagram
+  actor User
+  participant UI as Older React App.js flow
+  participant API as Root server.js
+  participant Disk as uploads/ local disk
+  participant PDF as pdf-lib
+  User->>UI: select PDF
+  UI->>API: POST /api/upload multipart
+  API->>Disk: Multer saves uploaded file
+  API->>PDF: load PDF and inspect AcroForm fields
+  PDF-->>API: field names, types, widget rectangles
+  API-->>UI: upload filename and detected field metadata
+  Note over UI,API: App.js may not be selected by the extensionless App import; client/src/index.js also has App.tsx.
+  Note over API,Disk: README says secure storage, auth, validation, malware scanning, audit, and privacy controls remain production gaps.

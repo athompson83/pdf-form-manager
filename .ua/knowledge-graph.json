@@ -1,0 +1,4237 @@
+{
+  "version": "1.0.0",
+  "kind": "codebase",
+  "project": {
+    "name": "PDF Form Manager",
+    "languages": [
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "typescript"
+    ],
+    "frameworks": [
+      "React",
+      "Express",
+      "pdf-lib",
+      "PDF.js",
+      "Multer"
+    ],
+    "description": "PDF Form Manager is a prototype React and Express application for detecting, mapping, previewing, and filling PDF form fields. Its README identifies missing production controls for storage, identity, upload validation, malware protection, audit, and privacy.",
+    "analyzedAt": "2026-09-23T19:47:09.321Z",
+    "gitCommitHash": "e14b0c8b9ac4c3b04b7135b6adac14b6904a838d"
+  },
+  "nodes": [
+    {
+      "id": "file:client/src/App.tsx",
+      "type": "file",
+      "name": "App.tsx",
+      "filePath": "client/src/App.tsx",
+      "summary": "React Router application shell for login/register and protected dashboard, template, API key, user, log, and Bubble pages.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/App.tsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "client/src/App.tsx",
+      "lineRange": [
+        29,
+        73
+      ],
+      "summary": "Implements App in client/src/App.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/apiKeys/APIKeyDetail.tsx",
+      "type": "file",
+      "name": "APIKeyDetail.tsx",
+      "filePath": "client/src/components/apiKeys/APIKeyDetail.tsx",
+      "summary": "Implements the APIKeyDetail React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/apiKeys/APIKeyDetail.tsx:APIKeyDetail",
+      "type": "function",
+      "name": "APIKeyDetail",
+      "filePath": "client/src/components/apiKeys/APIKeyDetail.tsx",
+      "lineRange": [
+        27,
+        240
+      ],
+      "summary": "Implements APIKeyDetail in client/src/components/apiKeys/APIKeyDetail.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/apiKeys/APIKeyList.tsx",
+      "type": "file",
+      "name": "APIKeyList.tsx",
+      "filePath": "client/src/components/apiKeys/APIKeyList.tsx",
+      "summary": "Implements the APIKeyList React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/apiKeys/APIKeyList.tsx:APIKeyList",
+      "type": "function",
+      "name": "APIKeyList",
+      "filePath": "client/src/components/apiKeys/APIKeyList.tsx",
+      "lineRange": [
+        47,
+        406
+      ],
+      "summary": "Implements APIKeyList in client/src/components/apiKeys/APIKeyList.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/auth/Login.tsx",
+      "type": "file",
+      "name": "Login.tsx",
+      "filePath": "client/src/components/auth/Login.tsx",
+      "summary": "Implements the Login React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/auth/Login.tsx:Login",
+      "type": "function",
+      "name": "Login",
+      "filePath": "client/src/components/auth/Login.tsx",
+      "lineRange": [
+        17,
+        92
+      ],
+      "summary": "Implements Login in client/src/components/auth/Login.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/auth/PrivateRoute.tsx",
+      "type": "file",
+      "name": "PrivateRoute.tsx",
+      "filePath": "client/src/components/auth/PrivateRoute.tsx",
+      "summary": "Implements the PrivateRoute React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:client/src/components/auth/PrivateRoute.tsx:PrivateRoute",
+      "type": "function",
+      "name": "PrivateRoute",
+      "filePath": "client/src/components/auth/PrivateRoute.tsx",
+      "lineRange": [
+        11,
+        40
+      ],
+      "summary": "Implements PrivateRoute in client/src/components/auth/PrivateRoute.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/components/auth/Register.tsx",
+      "type": "file",
+      "name": "Register.tsx",
+      "filePath": "client/src/components/auth/Register.tsx",
+      "summary": "Implements the Register React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/auth/Register.tsx:Register",
+      "type": "function",
+      "name": "Register",
+      "filePath": "client/src/components/auth/Register.tsx",
+      "lineRange": [
+        21,
+        147
+      ],
+      "summary": "Implements Register in client/src/components/auth/Register.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/bubble/BubbleIntegration.tsx",
+      "type": "file",
+      "name": "BubbleIntegration.tsx",
+      "filePath": "client/src/components/bubble/BubbleIntegration.tsx",
+      "summary": "Implements the BubbleIntegration React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/bubble/BubbleIntegration.tsx:TabPanel",
+      "type": "function",
+      "name": "TabPanel",
+      "filePath": "client/src/components/bubble/BubbleIntegration.tsx",
+      "lineRange": [
+        39,
+        52
+      ],
+      "summary": "Implements TabPanel in client/src/components/bubble/BubbleIntegration.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:client/src/components/bubble/BubbleIntegration.tsx:BubbleIntegration",
+      "type": "function",
+      "name": "BubbleIntegration",
+      "filePath": "client/src/components/bubble/BubbleIntegration.tsx",
+      "lineRange": [
+        54,
+        471
+      ],
+      "summary": "Implements BubbleIntegration in client/src/components/bubble/BubbleIntegration.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/dashboard/Dashboard.tsx",
+      "type": "file",
+      "name": "Dashboard.tsx",
+      "filePath": "client/src/components/dashboard/Dashboard.tsx",
+      "summary": "Implements the Dashboard React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/dashboard/Dashboard.tsx:Dashboard",
+      "type": "function",
+      "name": "Dashboard",
+      "filePath": "client/src/components/dashboard/Dashboard.tsx",
+      "lineRange": [
+        24,
+        129
+      ],
+      "summary": "Implements Dashboard in client/src/components/dashboard/Dashboard.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/layout/Layout.tsx",
+      "type": "file",
+      "name": "Layout.tsx",
+      "filePath": "client/src/components/layout/Layout.tsx",
+      "summary": "Implements the Layout React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/layout/Layout.tsx:Layout",
+      "type": "function",
+      "name": "Layout",
+      "filePath": "client/src/components/layout/Layout.tsx",
+      "lineRange": [
+        36,
+        208
+      ],
+      "summary": "Implements Layout in client/src/components/layout/Layout.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/logs/ActivityLogs.tsx",
+      "type": "file",
+      "name": "ActivityLogs.tsx",
+      "filePath": "client/src/components/logs/ActivityLogs.tsx",
+      "summary": "Implements the ActivityLogs React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/logs/ActivityLogs.tsx:ActivityLogs",
+      "type": "function",
+      "name": "ActivityLogs",
+      "filePath": "client/src/components/logs/ActivityLogs.tsx",
+      "lineRange": [
+        59,
+        319
+      ],
+      "summary": "Implements ActivityLogs in client/src/components/logs/ActivityLogs.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/logs/LogList.tsx",
+      "type": "file",
+      "name": "LogList.tsx",
+      "filePath": "client/src/components/logs/LogList.tsx",
+      "summary": "Implements the LogList React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/logs/LogList.tsx:LogList",
+      "type": "function",
+      "name": "LogList",
+      "filePath": "client/src/components/logs/LogList.tsx",
+      "lineRange": [
+        52,
+        462
+      ],
+      "summary": "Implements LogList in client/src/components/logs/LogList.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/settings/APIKeyManager.tsx",
+      "type": "file",
+      "name": "APIKeyManager.tsx",
+      "filePath": "client/src/components/settings/APIKeyManager.tsx",
+      "summary": "Implements the APIKeyManager React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/settings/APIKeyManager.tsx:APIKeyManager",
+      "type": "function",
+      "name": "APIKeyManager",
+      "filePath": "client/src/components/settings/APIKeyManager.tsx",
+      "lineRange": [
+        44,
+        272
+      ],
+      "summary": "Implements APIKeyManager in client/src/components/settings/APIKeyManager.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/templates/TemplateForm.tsx",
+      "type": "file",
+      "name": "TemplateForm.tsx",
+      "filePath": "client/src/components/templates/TemplateForm.tsx",
+      "summary": "Implements the TemplateForm React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/templates/TemplateForm.tsx:TemplateForm",
+      "type": "function",
+      "name": "TemplateForm",
+      "filePath": "client/src/components/templates/TemplateForm.tsx",
+      "lineRange": [
+        30,
+        349
+      ],
+      "summary": "Implements TemplateForm in client/src/components/templates/TemplateForm.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/templates/TemplateList.tsx",
+      "type": "file",
+      "name": "TemplateList.tsx",
+      "filePath": "client/src/components/templates/TemplateList.tsx",
+      "summary": "Implements the TemplateList React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/templates/TemplateList.tsx:TemplateList",
+      "type": "function",
+      "name": "TemplateList",
+      "filePath": "client/src/components/templates/TemplateList.tsx",
+      "lineRange": [
+        29,
+        284
+      ],
+      "summary": "Implements TemplateList in client/src/components/templates/TemplateList.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/templates/TemplateManager.tsx",
+      "type": "file",
+      "name": "TemplateManager.tsx",
+      "filePath": "client/src/components/templates/TemplateManager.tsx",
+      "summary": "Implements the TemplateManager React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/templates/TemplateManager.tsx:TemplateManager",
+      "type": "function",
+      "name": "TemplateManager",
+      "filePath": "client/src/components/templates/TemplateManager.tsx",
+      "lineRange": [
+        47,
+        310
+      ],
+      "summary": "Implements TemplateManager in client/src/components/templates/TemplateManager.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/users/UserList.tsx",
+      "type": "file",
+      "name": "UserList.tsx",
+      "filePath": "client/src/components/users/UserList.tsx",
+      "summary": "Implements the UserList React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/users/UserList.tsx:UserList",
+      "type": "function",
+      "name": "UserList",
+      "filePath": "client/src/components/users/UserList.tsx",
+      "lineRange": [
+        39,
+        458
+      ],
+      "summary": "Implements UserList in client/src/components/users/UserList.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/users/UserManagement.tsx",
+      "type": "file",
+      "name": "UserManagement.tsx",
+      "filePath": "client/src/components/users/UserManagement.tsx",
+      "summary": "Implements the UserManagement React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/users/UserManagement.tsx:UserManagement",
+      "type": "function",
+      "name": "UserManagement",
+      "filePath": "client/src/components/users/UserManagement.tsx",
+      "lineRange": [
+        46,
+        368
+      ],
+      "summary": "Implements UserManagement in client/src/components/users/UserManagement.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/users/UserProfile.tsx",
+      "type": "file",
+      "name": "UserProfile.tsx",
+      "filePath": "client/src/components/users/UserProfile.tsx",
+      "summary": "Implements the UserProfile React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/users/UserProfile.tsx:UserProfile",
+      "type": "function",
+      "name": "UserProfile",
+      "filePath": "client/src/components/users/UserProfile.tsx",
+      "lineRange": [
+        17,
+        261
+      ],
+      "summary": "Implements UserProfile in client/src/components/users/UserProfile.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/webhooks/WebhookManager.tsx",
+      "type": "file",
+      "name": "WebhookManager.tsx",
+      "filePath": "client/src/components/webhooks/WebhookManager.tsx",
+      "summary": "Implements the WebhookManager React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/webhooks/WebhookManager.tsx:WebhookManager",
+      "type": "function",
+      "name": "WebhookManager",
+      "filePath": "client/src/components/webhooks/WebhookManager.tsx",
+      "lineRange": [
+        37,
+        457
+      ],
+      "summary": "Implements WebhookManager in client/src/components/webhooks/WebhookManager.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/webhooks/WebhookTester.tsx",
+      "type": "file",
+      "name": "WebhookTester.tsx",
+      "filePath": "client/src/components/webhooks/WebhookTester.tsx",
+      "summary": "Implements the WebhookTester React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/webhooks/WebhookTester.tsx:WebhookTester",
+      "type": "function",
+      "name": "WebhookTester",
+      "filePath": "client/src/components/webhooks/WebhookTester.tsx",
+      "lineRange": [
+        42,
+        457
+      ],
+      "summary": "Implements WebhookTester in client/src/components/webhooks/WebhookTester.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/contexts/AuthContext.tsx",
+      "type": "file",
+      "name": "AuthContext.tsx",
+      "filePath": "client/src/contexts/AuthContext.tsx",
+      "summary": "Provides shared AuthContext React context state for the client.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/contexts/AuthContext.tsx:AuthProvider",
+      "type": "function",
+      "name": "AuthProvider",
+      "filePath": "client/src/contexts/AuthContext.tsx",
+      "lineRange": [
+        28,
+        81
+      ],
+      "summary": "Implements AuthProvider in client/src/contexts/AuthContext.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "client/src/index.js",
+      "summary": "Create React App browser entry that mounts an App component under ThemeProvider and CssBaseline.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/theme.ts",
+      "type": "file",
+      "name": "theme.ts",
+      "filePath": "client/src/theme.ts",
+      "summary": "Implements the theme typescript module within the React client.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/types/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "client/src/types/index.ts",
+      "summary": "Implements the index typescript module within the React client.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/controllers/apiKeyController.ts",
+      "type": "file",
+      "name": "apiKeyController.ts",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "summary": "Implements apiKeyController request handlers for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:createAPIKey",
+      "type": "function",
+      "name": "createAPIKey",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        6,
+        31
+      ],
+      "summary": "Implements createAPIKey in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:getAllAPIKeys",
+      "type": "function",
+      "name": "getAllAPIKeys",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        33,
+        52
+      ],
+      "summary": "Implements getAllAPIKeys in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:getAPIKey",
+      "type": "function",
+      "name": "getAPIKey",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        54,
+        79
+      ],
+      "summary": "Implements getAPIKey in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:updateAPIKey",
+      "type": "function",
+      "name": "updateAPIKey",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        81,
+        117
+      ],
+      "summary": "Implements updateAPIKey in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:revokeAPIKey",
+      "type": "function",
+      "name": "revokeAPIKey",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        119,
+        148
+      ],
+      "summary": "Implements revokeAPIKey in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/apiKeyController.ts:validateAPIKey",
+      "type": "function",
+      "name": "validateAPIKey",
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "lineRange": [
+        150,
+        178
+      ],
+      "summary": "Implements validateAPIKey in server/src/controllers/apiKeyController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/controllers/authController.ts",
+      "type": "file",
+      "name": "authController.ts",
+      "filePath": "server/src/controllers/authController.ts",
+      "summary": "Implements authController request handlers for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/authController.ts:register",
+      "type": "function",
+      "name": "register",
+      "filePath": "server/src/controllers/authController.ts",
+      "lineRange": [
+        13,
+        56
+      ],
+      "summary": "Implements register in server/src/controllers/authController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/authController.ts:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "server/src/controllers/authController.ts",
+      "lineRange": [
+        58,
+        100
+      ],
+      "summary": "Implements login in server/src/controllers/authController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/authController.ts:protect",
+      "type": "function",
+      "name": "protect",
+      "filePath": "server/src/controllers/authController.ts",
+      "lineRange": [
+        102,
+        135
+      ],
+      "summary": "Implements protect in server/src/controllers/authController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/authController.ts:restrictTo",
+      "type": "function",
+      "name": "restrictTo",
+      "filePath": "server/src/controllers/authController.ts",
+      "lineRange": [
+        137,
+        147
+      ],
+      "summary": "Implements restrictTo in server/src/controllers/authController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/controllers/logController.ts",
+      "type": "file",
+      "name": "logController.ts",
+      "filePath": "server/src/controllers/logController.ts",
+      "summary": "Implements logController request handlers for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/logController.ts:createLog",
+      "type": "function",
+      "name": "createLog",
+      "filePath": "server/src/controllers/logController.ts",
+      "lineRange": [
+        5,
+        29
+      ],
+      "summary": "Implements createLog in server/src/controllers/logController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/logController.ts:getLogs",
+      "type": "function",
+      "name": "getLogs",
+      "filePath": "server/src/controllers/logController.ts",
+      "lineRange": [
+        31,
+        69
+      ],
+      "summary": "Implements getLogs in server/src/controllers/logController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/logController.ts:getLog",
+      "type": "function",
+      "name": "getLog",
+      "filePath": "server/src/controllers/logController.ts",
+      "lineRange": [
+        71,
+        92
+      ],
+      "summary": "Implements getLog in server/src/controllers/logController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/logController.ts:logMiddleware",
+      "type": "function",
+      "name": "logMiddleware",
+      "filePath": "server/src/controllers/logController.ts",
+      "lineRange": [
+        94,
+        130
+      ],
+      "summary": "Implements logMiddleware in server/src/controllers/logController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/controllers/templateController.ts",
+      "type": "file",
+      "name": "templateController.ts",
+      "filePath": "server/src/controllers/templateController.ts",
+      "summary": "Implements templateController request handlers for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:uploadTemplate",
+      "type": "function",
+      "name": "uploadTemplate",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        20,
+        68
+      ],
+      "summary": "Implements uploadTemplate in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:getAllTemplates",
+      "type": "function",
+      "name": "getAllTemplates",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        70,
+        90
+      ],
+      "summary": "Implements getAllTemplates in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:getTemplate",
+      "type": "function",
+      "name": "getTemplate",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        92,
+        117
+      ],
+      "summary": "Implements getTemplate in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:updateTemplate",
+      "type": "function",
+      "name": "updateTemplate",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        119,
+        156
+      ],
+      "summary": "Implements updateTemplate in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:deleteTemplate",
+      "type": "function",
+      "name": "deleteTemplate",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        158,
+        188
+      ],
+      "summary": "Implements deleteTemplate in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/templateController.ts:fillTemplate",
+      "type": "function",
+      "name": "fillTemplate",
+      "filePath": "server/src/controllers/templateController.ts",
+      "lineRange": [
+        190,
+        245
+      ],
+      "summary": "Implements fillTemplate in server/src/controllers/templateController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/controllers/userController.ts",
+      "type": "file",
+      "name": "userController.ts",
+      "filePath": "server/src/controllers/userController.ts",
+      "summary": "Implements userController request handlers for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/userController.ts:getAllUsers",
+      "type": "function",
+      "name": "getAllUsers",
+      "filePath": "server/src/controllers/userController.ts",
+      "lineRange": [
+        6,
+        23
+      ],
+      "summary": "Implements getAllUsers in server/src/controllers/userController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/userController.ts:getUser",
+      "type": "function",
+      "name": "getUser",
+      "filePath": "server/src/controllers/userController.ts",
+      "lineRange": [
+        25,
+        45
+      ],
+      "summary": "Implements getUser in server/src/controllers/userController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/userController.ts:updateUser",
+      "type": "function",
+      "name": "updateUser",
+      "filePath": "server/src/controllers/userController.ts",
+      "lineRange": [
+        47,
+        79
+      ],
+      "summary": "Implements updateUser in server/src/controllers/userController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/controllers/userController.ts:deleteUser",
+      "type": "function",
+      "name": "deleteUser",
+      "filePath": "server/src/controllers/userController.ts",
+      "lineRange": [
+        81,
+        105
+      ],
+      "summary": "Implements deleteUser in server/src/controllers/userController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/controllers/userController.ts:updateCurrentUser",
+      "type": "function",
+      "name": "updateCurrentUser",
+      "filePath": "server/src/controllers/userController.ts",
+      "lineRange": [
+        107,
+        155
+      ],
+      "summary": "Implements updateCurrentUser in server/src/controllers/userController.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "server/src/index.ts",
+      "summary": "Separate TypeScript Express server scaffold connecting to MongoDB and mounting auth, template, API key, user, and log routes; it does not mount the PDF, Bubble, field-mapping, or webhook route modules.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/middleware/errorHandler.ts",
+      "type": "file",
+      "name": "errorHandler.ts",
+      "filePath": "server/src/middleware/errorHandler.ts",
+      "summary": "Provides errorHandler middleware for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/middleware/errorHandler.ts:errorHandler",
+      "type": "function",
+      "name": "errorHandler",
+      "filePath": "server/src/middleware/errorHandler.ts",
+      "lineRange": [
+        19,
+        47
+      ],
+      "summary": "Implements errorHandler in server/src/middleware/errorHandler.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:server/src/middleware/errorHandler.ts:AppError",
+      "type": "class",
+      "name": "AppError",
+      "filePath": "server/src/middleware/errorHandler.ts",
+      "lineRange": [
+        4,
+        17
+      ],
+      "summary": "Defines AppError in server/src/middleware/errorHandler.ts.",
+      "tags": [
+        "source-symbol",
+        "class",
+        "application-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/middleware/validation.ts",
+      "type": "file",
+      "name": "validation.ts",
+      "filePath": "server/src/middleware/validation.ts",
+      "summary": "Provides validation middleware for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/middleware/validation.ts:handleValidationErrors",
+      "type": "function",
+      "name": "handleValidationErrors",
+      "filePath": "server/src/middleware/validation.ts",
+      "lineRange": [
+        5,
+        16
+      ],
+      "summary": "Implements handleValidationErrors in server/src/middleware/validation.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/models/APIKey.ts",
+      "type": "file",
+      "name": "APIKey.ts",
+      "filePath": "server/src/models/APIKey.ts",
+      "summary": "Defines the APIKey persistence model for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/routes/apiKeys.ts",
+      "type": "file",
+      "name": "apiKeys.ts",
+      "filePath": "server/src/routes/apiKeys.ts",
+      "summary": "Defines the apiKeys route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/routes/auth.ts",
+      "type": "file",
+      "name": "auth.ts",
+      "filePath": "server/src/routes/auth.ts",
+      "summary": "Defines the auth route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/routes/logs.ts",
+      "type": "file",
+      "name": "logs.ts",
+      "filePath": "server/src/routes/logs.ts",
+      "summary": "Defines the logs route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/routes/templates.ts",
+      "type": "file",
+      "name": "templates.ts",
+      "filePath": "server/src/routes/templates.ts",
+      "summary": "Defines the templates route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/routes/users.ts",
+      "type": "file",
+      "name": "users.ts",
+      "filePath": "server/src/routes/users.ts",
+      "summary": "Defines the users route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/utils/logger.ts",
+      "type": "file",
+      "name": "logger.ts",
+      "filePath": "server/src/utils/logger.ts",
+      "summary": "Provides logger support utilities for server behavior.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "type": "file",
+      "name": "BubbleFieldMapping.test.tsx",
+      "filePath": "client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "summary": "Test source for the BubbleFieldMapping.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "type": "file",
+      "name": "FieldMappingValidator.test.tsx",
+      "filePath": "client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "summary": "Test source for the FieldMappingValidator.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:client/src/__tests__/components/PDFFieldDetector.test.tsx",
+      "type": "file",
+      "name": "PDFFieldDetector.test.tsx",
+      "filePath": "client/src/__tests__/components/PDFFieldDetector.test.tsx",
+      "summary": "Test source for the PDFFieldDetector.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/__tests__/components/PDFWebhookManager.test.tsx",
+      "type": "file",
+      "name": "PDFWebhookManager.test.tsx",
+      "filePath": "client/src/__tests__/components/PDFWebhookManager.test.tsx",
+      "summary": "Test source for the PDFWebhookManager.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:client/src/__tests__/mocks/bubbleFields.ts",
+      "type": "file",
+      "name": "bubbleFields.ts",
+      "filePath": "client/src/__tests__/mocks/bubbleFields.ts",
+      "summary": "Test source for the bubbleFields component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/__tests__/mocks/pdfFields.ts",
+      "type": "file",
+      "name": "pdfFields.ts",
+      "filePath": "client/src/__tests__/mocks/pdfFields.ts",
+      "summary": "Test source for the pdfFields component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/__tests__/mocks/validationResults.ts",
+      "type": "file",
+      "name": "validationResults.ts",
+      "filePath": "client/src/__tests__/mocks/validationResults.ts",
+      "summary": "Test source for the validationResults component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/__tests__/mocks/webhooks.ts",
+      "type": "file",
+      "name": "webhooks.ts",
+      "filePath": "client/src/__tests__/mocks/webhooks.ts",
+      "summary": "Test source for the webhooks component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/components/bubble/BubbleFieldMapping.tsx",
+      "type": "file",
+      "name": "BubbleFieldMapping.tsx",
+      "filePath": "client/src/components/bubble/BubbleFieldMapping.tsx",
+      "summary": "Implements the BubbleFieldMapping React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/bubble/BubbleFieldMapping.tsx:BubbleFieldMapping",
+      "type": "function",
+      "name": "BubbleFieldMapping",
+      "filePath": "client/src/components/bubble/BubbleFieldMapping.tsx",
+      "lineRange": [
+        18,
+        205
+      ],
+      "summary": "Implements BubbleFieldMapping in client/src/components/bubble/BubbleFieldMapping.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/pdf/PDFFieldDetector.tsx",
+      "type": "file",
+      "name": "PDFFieldDetector.tsx",
+      "filePath": "client/src/components/pdf/PDFFieldDetector.tsx",
+      "summary": "React UI for selecting a PDF and displaying detected PDF form fields through a PDF service.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/pdf/PDFFieldDetector.tsx:PDFFieldDetector",
+      "type": "function",
+      "name": "PDFFieldDetector",
+      "filePath": "client/src/components/pdf/PDFFieldDetector.tsx",
+      "lineRange": [
+        45,
+        518
+      ],
+      "summary": "Implements PDFFieldDetector in client/src/components/pdf/PDFFieldDetector.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/validation/FieldMappingValidator.tsx",
+      "type": "file",
+      "name": "FieldMappingValidator.tsx",
+      "filePath": "client/src/components/validation/FieldMappingValidator.tsx",
+      "summary": "Implements the FieldMappingValidator React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/validation/FieldMappingValidator.tsx:FieldMappingValidator",
+      "type": "function",
+      "name": "FieldMappingValidator",
+      "filePath": "client/src/components/validation/FieldMappingValidator.tsx",
+      "lineRange": [
+        41,
+        503
+      ],
+      "summary": "Implements FieldMappingValidator in client/src/components/validation/FieldMappingValidator.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+      "type": "file",
+      "name": "PDFWebhookManager.tsx",
+      "filePath": "client/src/components/webhooks/PDFWebhookManager.tsx",
+      "summary": "Implements the PDFWebhookManager React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/webhooks/PDFWebhookManager.tsx:PDFWebhookManager",
+      "type": "function",
+      "name": "PDFWebhookManager",
+      "filePath": "client/src/components/webhooks/PDFWebhookManager.tsx",
+      "lineRange": [
+        42,
+        555
+      ],
+      "summary": "Implements PDFWebhookManager in client/src/components/webhooks/PDFWebhookManager.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/context/FeedbackContext.tsx",
+      "type": "file",
+      "name": "FeedbackContext.tsx",
+      "filePath": "client/src/context/FeedbackContext.tsx",
+      "summary": "Provides shared FeedbackContext React context state for the client.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/context/FeedbackContext.tsx:FeedbackProvider",
+      "type": "function",
+      "name": "FeedbackProvider",
+      "filePath": "client/src/context/FeedbackContext.tsx",
+      "lineRange": [
+        16,
+        110
+      ],
+      "summary": "Implements FeedbackProvider in client/src/context/FeedbackContext.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/__tests__/integration/field-mapping.test.ts",
+      "type": "file",
+      "name": "field-mapping.test.ts",
+      "filePath": "server/src/__tests__/integration/field-mapping.test.ts",
+      "summary": "Test source for the field mapping.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:server/src/__tests__/integration/pdf.test.ts",
+      "type": "file",
+      "name": "pdf.test.ts",
+      "filePath": "server/src/__tests__/integration/pdf.test.ts",
+      "summary": "Test source for the pdf.test component or server workflow, using nearby test fixtures and mocks.",
+      "tags": [
+        "test-source",
+        "client-or-server",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:server/src/middleware/logger.ts",
+      "type": "file",
+      "name": "logger.ts",
+      "filePath": "server/src/middleware/logger.ts",
+      "summary": "Provides logger middleware for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/middleware/logger.ts:loggerMiddleware",
+      "type": "function",
+      "name": "loggerMiddleware",
+      "filePath": "server/src/middleware/logger.ts",
+      "lineRange": [
+        20,
+        70
+      ],
+      "summary": "Implements loggerMiddleware in server/src/middleware/logger.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/middleware/logger.ts:determineAction",
+      "type": "function",
+      "name": "determineAction",
+      "filePath": "server/src/middleware/logger.ts",
+      "lineRange": [
+        72,
+        116
+      ],
+      "summary": "Implements determineAction in server/src/middleware/logger.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/middleware/logger.ts:sanitizeBody",
+      "type": "function",
+      "name": "sanitizeBody",
+      "filePath": "server/src/middleware/logger.ts",
+      "lineRange": [
+        124,
+        137
+      ],
+      "summary": "Implements sanitizeBody in server/src/middleware/logger.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/middleware/logger.ts:logError",
+      "type": "function",
+      "name": "logError",
+      "filePath": "server/src/middleware/logger.ts",
+      "lineRange": [
+        139,
+        166
+      ],
+      "summary": "Implements logError in server/src/middleware/logger.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/models/Log.ts",
+      "type": "file",
+      "name": "Log.ts",
+      "filePath": "server/src/models/Log.ts",
+      "summary": "Defines the Log persistence model for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/models/Template.ts",
+      "type": "file",
+      "name": "Template.ts",
+      "filePath": "server/src/models/Template.ts",
+      "summary": "Defines the Template persistence model for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/models/User.ts",
+      "type": "file",
+      "name": "User.ts",
+      "filePath": "server/src/models/User.ts",
+      "summary": "Defines the User persistence model for the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/src/routes/bubble.ts",
+      "type": "file",
+      "name": "bubble.ts",
+      "filePath": "server/src/routes/bubble.ts",
+      "summary": "Defines the bubble route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:server/src/routes/field-mapping.ts",
+      "type": "file",
+      "name": "field-mapping.ts",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "summary": "Defines the field mapping route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:validateFieldTypes",
+      "type": "function",
+      "name": "validateFieldTypes",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        178,
+        205
+      ],
+      "summary": "Implements validateFieldTypes in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:validateFieldConstraints",
+      "type": "function",
+      "name": "validateFieldConstraints",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        207,
+        252
+      ],
+      "summary": "Implements validateFieldConstraints in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:findSimilarFields",
+      "type": "function",
+      "name": "findSimilarFields",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        254,
+        270
+      ],
+      "summary": "Implements findSimilarFields in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:calculateStringSimilarity",
+      "type": "function",
+      "name": "calculateStringSimilarity",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        272,
+        301
+      ],
+      "summary": "Implements calculateStringSimilarity in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:generateMissingFieldFix",
+      "type": "function",
+      "name": "generateMissingFieldFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        303,
+        336
+      ],
+      "summary": "Implements generateMissingFieldFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:generateTypeMismatchFix",
+      "type": "function",
+      "name": "generateTypeMismatchFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        338,
+        351
+      ],
+      "summary": "Implements generateTypeMismatchFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:generateConstraintMismatchFix",
+      "type": "function",
+      "name": "generateConstraintMismatchFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        353,
+        366
+      ],
+      "summary": "Implements generateConstraintMismatchFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:generateValidationMismatchFix",
+      "type": "function",
+      "name": "generateValidationMismatchFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        368,
+        381
+      ],
+      "summary": "Implements generateValidationMismatchFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:generateOptionsMismatchFix",
+      "type": "function",
+      "name": "generateOptionsMismatchFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        383,
+        396
+      ],
+      "summary": "Implements generateOptionsMismatchFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:getCompatibleType",
+      "type": "function",
+      "name": "getCompatibleType",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        398,
+        409
+      ],
+      "summary": "Implements getCompatibleType in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/field-mapping.ts:applyFix",
+      "type": "function",
+      "name": "applyFix",
+      "filePath": "server/src/routes/field-mapping.ts",
+      "lineRange": [
+        411,
+        433
+      ],
+      "summary": "Implements applyFix in server/src/routes/field-mapping.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/routes/pdf.ts",
+      "type": "file",
+      "name": "pdf.ts",
+      "filePath": "server/src/routes/pdf.ts",
+      "summary": "TypeScript PDF API route module for authenticated field detection and active-template field operations; the separate server entrypoint does not mount this route.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:server/src/routes/webhooks.ts",
+      "type": "file",
+      "name": "webhooks.ts",
+      "filePath": "server/src/routes/webhooks.ts",
+      "summary": "Defines the webhooks route module in the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:server/src/routes/webhooks.ts:transformFields",
+      "type": "function",
+      "name": "transformFields",
+      "filePath": "server/src/routes/webhooks.ts",
+      "lineRange": [
+        211,
+        228
+      ],
+      "summary": "Implements transformFields in server/src/routes/webhooks.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/webhooks.ts:transformValue",
+      "type": "function",
+      "name": "transformValue",
+      "filePath": "server/src/routes/webhooks.ts",
+      "lineRange": [
+        231,
+        254
+      ],
+      "summary": "Implements transformValue in server/src/routes/webhooks.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/src/routes/webhooks.ts:detectBubbleFields",
+      "type": "function",
+      "name": "detectBubbleFields",
+      "filePath": "server/src/routes/webhooks.ts",
+      "lineRange": [
+        257,
+        290
+      ],
+      "summary": "Implements detectBubbleFields in server/src/routes/webhooks.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/src/routes/webhooks.ts:mapToBubbleType",
+      "type": "function",
+      "name": "mapToBubbleType",
+      "filePath": "server/src/routes/webhooks.ts",
+      "lineRange": [
+        293,
+        309
+      ],
+      "summary": "Implements mapToBubbleType in server/src/routes/webhooks.ts; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/src/App.js",
+      "type": "file",
+      "name": "App.js",
+      "filePath": "client/src/App.js",
+      "summary": "Legacy React stepper for PDF upload, Bubble configuration, field mapping, and integration testing; submits uploads to the root API.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/App.js:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "client/src/App.js",
+      "lineRange": [
+        33,
+        163
+      ],
+      "summary": "Implements App in client/src/App.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/BubbleDBConfig.js",
+      "type": "file",
+      "name": "BubbleDBConfig.js",
+      "filePath": "client/src/components/BubbleDBConfig.js",
+      "summary": "Implements the BubbleDBConfig React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/BubbleDBConfig.js:BubbleDBConfig",
+      "type": "function",
+      "name": "BubbleDBConfig",
+      "filePath": "client/src/components/BubbleDBConfig.js",
+      "lineRange": [
+        12,
+        104
+      ],
+      "summary": "Implements BubbleDBConfig in client/src/components/BubbleDBConfig.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/BubbleIntegrationGuide.js",
+      "type": "file",
+      "name": "BubbleIntegrationGuide.js",
+      "filePath": "client/src/components/BubbleIntegrationGuide.js",
+      "summary": "Implements the BubbleIntegrationGuide React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/BubbleIntegrationGuide.js:BubbleIntegrationGuide",
+      "type": "function",
+      "name": "BubbleIntegrationGuide",
+      "filePath": "client/src/components/BubbleIntegrationGuide.js",
+      "lineRange": [
+        15,
+        107
+      ],
+      "summary": "Implements BubbleIntegrationGuide in client/src/components/BubbleIntegrationGuide.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/BubbleTestConsole.js",
+      "type": "file",
+      "name": "BubbleTestConsole.js",
+      "filePath": "client/src/components/BubbleTestConsole.js",
+      "summary": "Implements the BubbleTestConsole React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/BubbleTestConsole.js:BubbleTestConsole",
+      "type": "function",
+      "name": "BubbleTestConsole",
+      "filePath": "client/src/components/BubbleTestConsole.js",
+      "lineRange": [
+        15,
+        155
+      ],
+      "summary": "Implements BubbleTestConsole in client/src/components/BubbleTestConsole.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/PDFPreview.js",
+      "type": "file",
+      "name": "PDFPreview.js",
+      "filePath": "client/src/components/PDFPreview.js",
+      "summary": "Implements the PDFPreview React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:client/src/components/PDFPreview.js:PDFPreview",
+      "type": "function",
+      "name": "PDFPreview",
+      "filePath": "client/src/components/PDFPreview.js",
+      "lineRange": [
+        9,
+        59
+      ],
+      "summary": "Implements PDFPreview in client/src/components/PDFPreview.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:client/src/components/templates/TemplateDetail.tsx",
+      "type": "file",
+      "name": "TemplateDetail.tsx",
+      "filePath": "client/src/components/templates/TemplateDetail.tsx",
+      "summary": "Implements the TemplateDetail React component in the client interface.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:client/src/components/templates/TemplateDetail.tsx:TemplateDetail",
+      "type": "function",
+      "name": "TemplateDetail",
+      "filePath": "client/src/components/templates/TemplateDetail.tsx",
+      "lineRange": [
+        35,
+        317
+      ],
+      "summary": "Implements TemplateDetail in client/src/components/templates/TemplateDetail.tsx; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Documents the prototype scope, React client and Express service organization, PDF workflows, and explicit production gaps.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Legacy static editor shell that loads PDF.js, pdf-lib, its styles, and the browser editor script; a credential-bearing configuration script referenced by the source is excluded from this graph.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Root package manifest that starts the legacy root server.js and can run the React client alongside it.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "styles.css",
+      "summary": "Defines interface styling for the legacy browser editor.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "app.js",
+      "summary": "Legacy standalone browser PDF form editor using PDF.js and pdf-lib globals loaded by the root HTML page.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app.js:loadPDF",
+      "type": "function",
+      "name": "loadPDF",
+      "filePath": "app.js",
+      "lineRange": [
+        68,
+        118
+      ],
+      "summary": "Implements loadPDF in app.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app.js:updateFieldList",
+      "type": "function",
+      "name": "updateFieldList",
+      "filePath": "app.js",
+      "lineRange": [
+        154,
+        177
+      ],
+      "summary": "Implements updateFieldList in app.js; see its file summary for the module boundary.",
+      "tags": [
+        "source-symbol",
+        "application-logic",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:client/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "client/package.json",
+      "summary": "Create React App client manifest with React, MUI, React Router, and local development proxy to port 3001.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:client/public/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "client/public/index.html",
+      "summary": "Provides the browser document shell for client/public/index.html.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:client/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "client/tsconfig.json",
+      "summary": "Configures TypeScript compilation for the React client.",
+      "tags": [
+        "client",
+        "react",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server.js",
+      "type": "file",
+      "name": "server.js",
+      "filePath": "server.js",
+      "summary": "Legacy root Express API started by the root package scripts; accepts PDF uploads to a disk directory, extracts AcroForm fields with pdf-lib, exposes Bubble and webhook endpoints, and serves upload files.",
+      "tags": [
+        "application",
+        "prototype",
+        "source-file"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:server/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "server/package.json",
+      "summary": "Separate TypeScript server manifest with a compiled dist entrypoint, MongoDB, authentication, validation, logging, and PDF dependencies.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/src/types/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "server/src/types/index.ts",
+      "summary": "Implements the index typescript module within the TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:server/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "server/tsconfig.json",
+      "summary": "Configures TypeScript compilation for the separate TypeScript server scaffold.",
+      "tags": [
+        "server",
+        "typescript",
+        "prototype"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/apiKeys/APIKeyDetail.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/apiKeys/APIKeyList.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/auth/Login.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/auth/PrivateRoute.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/auth/Register.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/dashboard/Dashboard.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/layout/Layout.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/logs/LogList.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/templates/TemplateDetail.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/templates/TemplateForm.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/templates/TemplateList.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/users/UserList.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/components/users/UserProfile.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/context/FeedbackContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "file:client/src/theme.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.tsx",
+      "target": "function:client/src/App.tsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/apiKeys/APIKeyDetail.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/apiKeys/APIKeyDetail.tsx",
+      "target": "function:client/src/components/apiKeys/APIKeyDetail.tsx:APIKeyDetail",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/apiKeys/APIKeyList.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/apiKeys/APIKeyList.tsx",
+      "target": "function:client/src/components/apiKeys/APIKeyList.tsx:APIKeyList",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/auth/Login.tsx",
+      "target": "function:client/src/components/auth/Login.tsx:Login",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/auth/PrivateRoute.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/auth/PrivateRoute.tsx",
+      "target": "function:client/src/components/auth/PrivateRoute.tsx:PrivateRoute",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/auth/Register.tsx",
+      "target": "function:client/src/components/auth/Register.tsx:Register",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/bubble/BubbleIntegration.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/bubble/BubbleIntegration.tsx",
+      "target": "function:client/src/components/bubble/BubbleIntegration.tsx:TabPanel",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/bubble/BubbleIntegration.tsx",
+      "target": "function:client/src/components/bubble/BubbleIntegration.tsx:BubbleIntegration",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/dashboard/Dashboard.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/dashboard/Dashboard.tsx",
+      "target": "function:client/src/components/dashboard/Dashboard.tsx:Dashboard",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/layout/Layout.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/layout/Layout.tsx",
+      "target": "function:client/src/components/layout/Layout.tsx:Layout",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/logs/ActivityLogs.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/logs/ActivityLogs.tsx",
+      "target": "function:client/src/components/logs/ActivityLogs.tsx:ActivityLogs",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/logs/LogList.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/logs/LogList.tsx",
+      "target": "function:client/src/components/logs/LogList.tsx:LogList",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/settings/APIKeyManager.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/settings/APIKeyManager.tsx",
+      "target": "function:client/src/components/settings/APIKeyManager.tsx:APIKeyManager",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateForm.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateForm.tsx",
+      "target": "function:client/src/components/templates/TemplateForm.tsx:TemplateForm",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateList.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateList.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateList.tsx",
+      "target": "function:client/src/components/templates/TemplateList.tsx:TemplateList",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateManager.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateManager.tsx",
+      "target": "function:client/src/components/templates/TemplateManager.tsx:TemplateManager",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/users/UserList.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/users/UserList.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/users/UserList.tsx",
+      "target": "function:client/src/components/users/UserList.tsx:UserList",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/users/UserManagement.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/users/UserManagement.tsx",
+      "target": "function:client/src/components/users/UserManagement.tsx:UserManagement",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/users/UserProfile.tsx",
+      "target": "file:client/src/contexts/AuthContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/users/UserProfile.tsx",
+      "target": "function:client/src/components/users/UserProfile.tsx:UserProfile",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/webhooks/WebhookManager.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/webhooks/WebhookManager.tsx",
+      "target": "function:client/src/components/webhooks/WebhookManager.tsx:WebhookManager",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/webhooks/WebhookTester.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/webhooks/WebhookTester.tsx",
+      "target": "function:client/src/components/webhooks/WebhookTester.tsx:WebhookTester",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/contexts/AuthContext.tsx",
+      "target": "function:client/src/contexts/AuthContext.tsx:AuthProvider",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/index.js",
+      "target": "file:client/src/App.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "file:server/src/models/APIKey.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:createAPIKey",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:getAllAPIKeys",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:getAPIKey",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:updateAPIKey",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:revokeAPIKey",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/apiKeyController.ts",
+      "target": "function:server/src/controllers/apiKeyController.ts:validateAPIKey",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "file:server/src/models/User.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "function:server/src/controllers/authController.ts:register",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "function:server/src/controllers/authController.ts:login",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "function:server/src/controllers/authController.ts:protect",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/authController.ts",
+      "target": "function:server/src/controllers/authController.ts:restrictTo",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "file:server/src/models/Log.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "function:server/src/controllers/logController.ts:createLog",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "function:server/src/controllers/logController.ts:getLogs",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "function:server/src/controllers/logController.ts:getLog",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/logController.ts",
+      "target": "function:server/src/controllers/logController.ts:logMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "file:server/src/models/Template.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:uploadTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:getAllTemplates",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:getTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:updateTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:deleteTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/templateController.ts",
+      "target": "function:server/src/controllers/templateController.ts:fillTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "file:server/src/models/User.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "function:server/src/controllers/userController.ts:getAllUsers",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "function:server/src/controllers/userController.ts:getUser",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "function:server/src/controllers/userController.ts:updateUser",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "function:server/src/controllers/userController.ts:deleteUser",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/controllers/userController.ts",
+      "target": "function:server/src/controllers/userController.ts:updateCurrentUser",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/routes/apiKeys.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/routes/auth.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/routes/logs.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/routes/templates.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/routes/users.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/index.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/errorHandler.ts",
+      "target": "file:server/src/utils/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/errorHandler.ts",
+      "target": "function:server/src/middleware/errorHandler.ts:errorHandler",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/middleware/errorHandler.ts",
+      "target": "class:server/src/middleware/errorHandler.ts:AppError",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/middleware/validation.ts",
+      "target": "file:server/src/middleware/errorHandler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/validation.ts",
+      "target": "function:server/src/middleware/validation.ts:handleValidationErrors",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/apiKeys.ts",
+      "target": "file:server/src/controllers/apiKeyController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/apiKeys.ts",
+      "target": "file:server/src/controllers/authController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/apiKeys.ts",
+      "target": "file:server/src/middleware/validation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/auth.ts",
+      "target": "file:server/src/controllers/authController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/auth.ts",
+      "target": "file:server/src/middleware/validation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/logs.ts",
+      "target": "file:server/src/controllers/authController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/logs.ts",
+      "target": "file:server/src/controllers/logController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/templates.ts",
+      "target": "file:server/src/controllers/authController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/templates.ts",
+      "target": "file:server/src/controllers/templateController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/templates.ts",
+      "target": "file:server/src/middleware/validation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/users.ts",
+      "target": "file:server/src/controllers/authController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/users.ts",
+      "target": "file:server/src/controllers/userController.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/users.ts",
+      "target": "file:server/src/middleware/validation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "target": "file:client/src/__tests__/mocks/bubbleFields.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "target": "file:client/src/__tests__/mocks/pdfFields.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "target": "file:client/src/components/bubble/BubbleFieldMapping.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "target": "file:client/src/__tests__/mocks/bubbleFields.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "target": "file:client/src/__tests__/mocks/pdfFields.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "target": "file:client/src/__tests__/mocks/validationResults.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "target": "file:client/src/components/validation/FieldMappingValidator.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/PDFFieldDetector.test.tsx",
+      "target": "file:client/src/__tests__/mocks/pdfFields.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/PDFFieldDetector.test.tsx",
+      "target": "file:client/src/components/pdf/PDFFieldDetector.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/PDFWebhookManager.test.tsx",
+      "target": "file:client/src/__tests__/mocks/webhooks.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/__tests__/components/PDFWebhookManager.test.tsx",
+      "target": "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/bubble/BubbleFieldMapping.tsx",
+      "target": "file:client/src/context/FeedbackContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/bubble/BubbleFieldMapping.tsx",
+      "target": "function:client/src/components/bubble/BubbleFieldMapping.tsx:BubbleFieldMapping",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/pdf/PDFFieldDetector.tsx",
+      "target": "file:client/src/context/FeedbackContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/pdf/PDFFieldDetector.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/pdf/PDFFieldDetector.tsx",
+      "target": "function:client/src/components/pdf/PDFFieldDetector.tsx:PDFFieldDetector",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/validation/FieldMappingValidator.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/validation/FieldMappingValidator.tsx",
+      "target": "function:client/src/components/validation/FieldMappingValidator.tsx:FieldMappingValidator",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+      "target": "file:client/src/context/FeedbackContext.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+      "target": "function:client/src/components/webhooks/PDFWebhookManager.tsx:PDFWebhookManager",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/context/FeedbackContext.tsx",
+      "target": "function:client/src/context/FeedbackContext.tsx:FeedbackProvider",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/__tests__/integration/field-mapping.test.ts",
+      "target": "file:server/src/models/Template.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/__tests__/integration/field-mapping.test.ts",
+      "target": "file:server/src/models/User.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/__tests__/integration/pdf.test.ts",
+      "target": "file:server/src/models/Template.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/__tests__/integration/pdf.test.ts",
+      "target": "file:server/src/models/User.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "file:server/src/models/Log.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "file:server/src/models/User.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "function:server/src/middleware/logger.ts:loggerMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "function:server/src/middleware/logger.ts:determineAction",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "function:server/src/middleware/logger.ts:sanitizeBody",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/middleware/logger.ts",
+      "target": "function:server/src/middleware/logger.ts:logError",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/bubble.ts",
+      "target": "file:server/src/middleware/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/bubble.ts",
+      "target": "file:server/src/models/Template.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "file:server/src/middleware/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:validateFieldTypes",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:validateFieldConstraints",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:findSimilarFields",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:calculateStringSimilarity",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:generateMissingFieldFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:generateTypeMismatchFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:generateConstraintMismatchFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:generateValidationMismatchFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:generateOptionsMismatchFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:getCompatibleType",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/field-mapping.ts",
+      "target": "function:server/src/routes/field-mapping.ts:applyFix",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/pdf.ts",
+      "target": "file:server/src/middleware/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/pdf.ts",
+      "target": "file:server/src/models/Template.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/webhooks.ts",
+      "target": "file:server/src/middleware/logger.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:server/src/routes/webhooks.ts",
+      "target": "function:server/src/routes/webhooks.ts:transformFields",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/webhooks.ts",
+      "target": "function:server/src/routes/webhooks.ts:transformValue",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/webhooks.ts",
+      "target": "function:server/src/routes/webhooks.ts:detectBubbleFields",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:server/src/routes/webhooks.ts",
+      "target": "function:server/src/routes/webhooks.ts:mapToBubbleType",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "file:client/src/components/BubbleDBConfig.js",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "file:client/src/components/BubbleIntegrationGuide.js",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "file:client/src/components/BubbleTestConsole.js",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "file:client/src/components/PDFPreview.js",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "function:client/src/App.js:App",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/BubbleDBConfig.js",
+      "target": "function:client/src/components/BubbleDBConfig.js:BubbleDBConfig",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/BubbleIntegrationGuide.js",
+      "target": "function:client/src/components/BubbleIntegrationGuide.js:BubbleIntegrationGuide",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/BubbleTestConsole.js",
+      "target": "function:client/src/components/BubbleTestConsole.js:BubbleTestConsole",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/PDFPreview.js",
+      "target": "function:client/src/components/PDFPreview.js:PDFPreview",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateDetail.tsx",
+      "target": "file:client/src/components/PDFPreview.js",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateDetail.tsx",
+      "target": "file:client/src/types/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "Project-internal import resolved by pinned scanner.",
+      "weight": 0.9
+    },
+    {
+      "source": "file:client/src/components/templates/TemplateDetail.tsx",
+      "target": "function:client/src/components/templates/TemplateDetail.tsx:TemplateDetail",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:client/src/App.js",
+      "target": "file:server.js",
+      "type": "calls",
+      "direction": "forward",
+      "description": "Legacy React flow posts uploaded PDFs to the root /api/upload endpoint.",
+      "weight": 0.95
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:server.js",
+      "type": "documents",
+      "description": "README describes the root Express upload API and PDF processing shape.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:client/src/App.tsx",
+      "type": "documents",
+      "description": "README describes the client as a React application.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:server.js",
+      "type": "configures",
+      "description": "Root start and dev scripts launch the root server.js process.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:client/package.json",
+      "type": "configures",
+      "description": "Root client and dev:full scripts invoke the client package.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "description": "The legacy HTML page loads the standalone browser editor script.",
+      "weight": 0.95
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:styles.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "description": "The legacy HTML page loads its stylesheet.",
+      "weight": 0.95
+    },
+    {
+      "source": "file:app.js",
+      "target": "function:app.js:loadPDF",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "file:app.js",
+      "target": "function:app.js:updateFieldList",
+      "type": "contains",
+      "direction": "forward",
+      "description": "Source file defines this structural symbol.",
+      "weight": 1
+    },
+    {
+      "source": "config:client/package.json",
+      "target": "file:client/src/index.js",
+      "type": "configures",
+      "description": "Create React App uses the client source index as the browser entry.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "config:client/package.json",
+      "target": "file:server.js",
+      "type": "depends_on",
+      "description": "The React development proxy targets the root API on port 3001.",
+      "direction": "forward",
+      "weight": 0.95
+    },
+    {
+      "source": "config:server/package.json",
+      "target": "file:server/src/index.ts",
+      "type": "configures",
+      "description": "The separate server package scripts build and launch the TypeScript server entry.",
+      "direction": "forward",
+      "weight": 0.95
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:legacy-browser-and-root-api",
+      "name": "Legacy browser and root API",
+      "description": "The standalone root PDF.js browser editor and the root Express server started by the root package scripts.",
+      "nodeIds": [
+        "file:index.html",
+        "file:styles.css",
+        "file:app.js",
+        "file:server.js"
+      ]
+    },
+    {
+      "id": "layer:react-client",
+      "name": "React client",
+      "description": "The client Create React App tree, authentication, route shell, PDF, template, Bubble, user, and management components.",
+      "nodeIds": [
+        "file:client/src/App.tsx",
+        "file:client/src/components/apiKeys/APIKeyDetail.tsx",
+        "file:client/src/components/apiKeys/APIKeyList.tsx",
+        "file:client/src/components/auth/Login.tsx",
+        "file:client/src/components/auth/PrivateRoute.tsx",
+        "file:client/src/components/auth/Register.tsx",
+        "file:client/src/components/bubble/BubbleIntegration.tsx",
+        "file:client/src/components/dashboard/Dashboard.tsx",
+        "file:client/src/components/layout/Layout.tsx",
+        "file:client/src/components/logs/ActivityLogs.tsx",
+        "file:client/src/components/logs/LogList.tsx",
+        "file:client/src/components/settings/APIKeyManager.tsx",
+        "file:client/src/components/templates/TemplateForm.tsx",
+        "file:client/src/components/templates/TemplateList.tsx",
+        "file:client/src/components/templates/TemplateManager.tsx",
+        "file:client/src/components/users/UserList.tsx",
+        "file:client/src/components/users/UserManagement.tsx",
+        "file:client/src/components/users/UserProfile.tsx",
+        "file:client/src/components/webhooks/WebhookManager.tsx",
+        "file:client/src/components/webhooks/WebhookTester.tsx",
+        "file:client/src/contexts/AuthContext.tsx",
+        "file:client/src/index.js",
+        "file:client/src/theme.ts",
+        "file:client/src/types/index.ts",
+        "file:client/src/components/bubble/BubbleFieldMapping.tsx",
+        "file:client/src/components/pdf/PDFFieldDetector.tsx",
+        "file:client/src/components/validation/FieldMappingValidator.tsx",
+        "file:client/src/components/webhooks/PDFWebhookManager.tsx",
+        "file:client/src/context/FeedbackContext.tsx",
+        "file:client/src/App.js",
+        "file:client/src/components/BubbleDBConfig.js",
+        "file:client/src/components/BubbleIntegrationGuide.js",
+        "file:client/src/components/BubbleTestConsole.js",
+        "file:client/src/components/PDFPreview.js",
+        "file:client/src/components/templates/TemplateDetail.tsx",
+        "config:client/package.json",
+        "file:client/public/index.html",
+        "config:client/tsconfig.json"
+      ]
+    },
+    {
+      "id": "layer:typescript-server-scaffold",
+      "name": "TypeScript server scaffold",
+      "description": "A separate server package with Express routes, middleware, Mongoose models, and controllers.",
+      "nodeIds": [
+        "file:server/src/controllers/apiKeyController.ts",
+        "file:server/src/controllers/authController.ts",
+        "file:server/src/controllers/logController.ts",
+        "file:server/src/controllers/templateController.ts",
+        "file:server/src/controllers/userController.ts",
+        "file:server/src/index.ts",
+        "file:server/src/middleware/errorHandler.ts",
+        "file:server/src/middleware/validation.ts",
+        "file:server/src/models/APIKey.ts",
+        "file:server/src/routes/apiKeys.ts",
+        "file:server/src/routes/auth.ts",
+        "file:server/src/routes/logs.ts",
+        "file:server/src/routes/templates.ts",
+        "file:server/src/routes/users.ts",
+        "file:server/src/utils/logger.ts",
+        "file:server/src/middleware/logger.ts",
+        "file:server/src/models/Log.ts",
+        "file:server/src/models/Template.ts",
+        "file:server/src/models/User.ts",
+        "file:server/src/routes/bubble.ts",
+        "file:server/src/routes/field-mapping.ts",
+        "file:server/src/routes/pdf.ts",
+        "file:server/src/routes/webhooks.ts",
+        "config:server/package.json",
+        "file:server/src/types/index.ts",
+        "config:server/tsconfig.json"
+      ]
+    },
+    {
+      "id": "layer:tests-and-fixtures",
+      "name": "Tests and fixtures",
+      "description": "Client component tests, server integration test sources, and associated mocks.",
+      "nodeIds": [
+        "file:client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+        "file:client/src/__tests__/components/FieldMappingValidator.test.tsx",
+        "file:client/src/__tests__/components/PDFFieldDetector.test.tsx",
+        "file:client/src/__tests__/components/PDFWebhookManager.test.tsx",
+        "file:client/src/__tests__/mocks/bubbleFields.ts",
+        "file:client/src/__tests__/mocks/pdfFields.ts",
+        "file:client/src/__tests__/mocks/validationResults.ts",
+        "file:client/src/__tests__/mocks/webhooks.ts",
+        "file:server/src/__tests__/integration/field-mapping.test.ts",
+        "file:server/src/__tests__/integration/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "layer:project-docs-and-tooling",
+      "name": "Project docs and tooling",
+      "description": "README and root/client/server package and TypeScript configuration.",
+      "nodeIds": [
+        "document:README.md",
+        "config:package.json"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Prototype scope and source trees",
+      "description": "Read README and identify the root legacy browser/server, React client, and separate TypeScript server.",
+      "nodeIds": [
+        "document:README.md",
+        "config:package.json",
+        "config:client/package.json",
+        "config:server/package.json"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Legacy browser PDF editor",
+      "description": "Follow the root static HTML into its PDF.js browser editor and stylesheet; its credential-bearing configuration script is excluded from analysis.",
+      "nodeIds": [
+        "file:index.html",
+        "file:app.js",
+        "file:styles.css"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Root upload API",
+      "description": "Inspect the root package entrypoint and Express API for local disk uploads, pdf-lib field extraction, Bubble endpoints, and in-memory webhook templates.",
+      "nodeIds": [
+        "file:server.js",
+        "config:package.json"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "React client entry and routes",
+      "description": "Trace client/src/index.js through the React route shell. Both App.js and App.tsx exist; the pinned scanner resolves App.tsx while actual bundler resolution is unverified.",
+      "nodeIds": [
+        "file:client/src/index.js",
+        "file:client/src/App.tsx",
+        "file:client/src/App.js",
+        "file:client/public/index.html"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Separate TypeScript server",
+      "description": "Review the separate server package and entrypoint. It mounts auth, templates, API keys, users, and logs; PDF, Bubble, field-mapping, and webhook route modules are present but not mounted there.",
+      "nodeIds": [
+        "config:server/package.json",
+        "file:server/src/index.ts",
+        "file:server/src/routes/pdf.ts",
+        "file:server/src/routes/bubble.ts",
+        "file:server/src/routes/webhooks.ts"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Test sources and prototype gaps",
+      "description": "Browse available test sources and compare them with README production gaps; this analysis did not execute tests.",
+      "nodeIds": [
+        "document:README.md",
+        "file:client/src/__tests__/components/PDFFieldDetector.test.tsx",
+        "file:server/src/__tests__/integration/pdf.test.ts"
+      ]
+    }
+  ]
+}

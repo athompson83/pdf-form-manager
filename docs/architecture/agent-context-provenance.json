@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "project": "PDF Form Manager",
+  "source": {
+    "branch": "main",
+    "commit": "e14b0c8b9ac4c3b04b7135b6adac14b6904a838d",
+    "remote": "athompson83/pdf-form-manager"
+  },
+  "tooling": {
+    "name": "Understand-Anything",
+    "revision": "6df3065f1d8ddc2ce3615314d1d493f36d6b1c80"
+  },
+  "inventory": {
+    "files": 80,
+    "excluded": 1,
+    "categories": {
+      "docs": 1,
+      "code": 71,
+      "config": 5,
+      "markup": 3
+    },
+    "importEdges": 107
+  },
+  "exclusions": [
+    {
+      "file": "config.js",
+      "reason": "Contains a credential-like hardcoded value; excluded from scan, graph, fragments, and generated context."
+    }
+  ],
+  "generated": [
+    ".ua/knowledge-graph.json",
+    "docs/architecture/agent-context.md",
+    "docs/architecture/system-overview.mmd",
+    "docs/architecture/server-flow.mmd"
+  ],
+  "caveats": [
+    "No .codegraph/, AGENTS.md, .gitignore, or repository governance file was present at analysis start.",
+    "Three files were skipped by structural extraction: index.html, styles.css, client/public/index.html; all were manually read and retained as file-level nodes.",
+    "The repository contains parallel root/React/TypeScript app trees; extensionless App import and duplicate App files make actual React resolver choice unverified.",
+    "Root backend and TypeScript server scaffold differ; server/src/index.ts does not mount PDF/Bubble/field-mapping/webhook route modules.",
+    "README documents missing production security/privacy controls; no tests were run."
+  ]
+}
