@@ -1,0 +1,11 @@
+flowchart LR
+  Root[Root package scripts] --> LegacyAPI[server.js legacy API]
+  Root --> ReactDev[client React dev server]
+  ReactDev -. development proxy port 3001 .-> LegacyAPI
+  Static[Root index.html] --> LegacyUI[app.js PDF.js editor]
+  LegacyUI --> LocalPDF[Browser PDF preview and form editing]
+  ClientEntry[client/src/index.js] --> AppTS[App.tsx per pinned import resolver]
+  ClientEntry -. sibling creates resolver ambiguity .-> AppJS[App.js older upload stepper]
+  ServerPkg[server/package.json] --> TSAPI[server/src/index.ts separate TS/Mongoose scaffold]
+  TSAPI --> Mounted[Auth, templates, API keys, users, logs]
+  TSAPI -. does not mount .-> OtherRoutes[PDF, Bubble, field mapping, webhooks modules]

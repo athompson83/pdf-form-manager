@@ -1,0 +1,4238 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "e14b0c8b9ac4c3b04b7135b6adac14b6904a838d",
+  "generatedAt": "2026-09-23T19:49:35.077Z",
+  "files": {
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "45490f62831e437793e5fbde0bc2a09af8d6fdf32dacb57a1cc81af23de92bb9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": false
+    },
+    "app.js": {
+      "filePath": "app.js",
+      "contentHash": "596bcd46f125d20b2540690264d82388498712b1e3dbac6e3296a54e90521ed6",
+      "functions": [
+        {
+          "name": "parseJSONWithComments",
+          "params": [
+            "jsonString"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "stripComments",
+          "params": [
+            "str"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "safeJSONParse",
+          "params": [
+            "str"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "loadPDF",
+          "params": [
+            "file"
+          ],
+          "exported": false,
+          "lineCount": 51
+        },
+        {
+          "name": "getFieldType",
+          "params": [
+            "fieldType"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "updateFieldList",
+          "params": [],
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "removeField",
+          "params": [
+            "index"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "closeFieldModal",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "stripJsonComments",
+          "params": [
+            "jsonString"
+          ],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 264,
+      "hasStructuralAnalysis": true
+    },
+    "client/package.json": {
+      "filePath": "client/package.json",
+      "contentHash": "82af3e0e45ab0030e9565ff65ba993db0280c78efca0cb3cf7114701d372afd6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 50,
+      "hasStructuralAnalysis": false
+    },
+    "client/public/index.html": {
+      "filePath": "client/public/index.html",
+      "contentHash": "87939a619628701abed6b94abdcbb153d55e3a93a73f24b679f44aa71df5627a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "client/src/App.js": {
+      "filePath": "client/src/App.js",
+      "contentHash": "c94832181204bbc65e94990144a90ae27aeccdc6e7f3f76bb9a2c351f2888418",
+      "functions": [
+        {
+          "name": "App",
+          "params": [],
+          "exported": false,
+          "lineCount": 131
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Container",
+            "Paper",
+            "Box",
+            "Typography",
+            "Button",
+            "Stepper",
+            "Step",
+            "StepLabel",
+            "CircularProgress",
+            "ThemeProvider",
+            "createTheme"
+          ]
+        },
+        {
+          "source": "./components/PDFPreview",
+          "specifiers": [
+            "PDFPreview"
+          ]
+        },
+        {
+          "source": "./components/BubbleDBConfig",
+          "specifiers": [
+            "BubbleDBConfig"
+          ]
+        },
+        {
+          "source": "./components/BubbleIntegrationGuide",
+          "specifiers": [
+            "BubbleIntegrationGuide"
+          ]
+        },
+        {
+          "source": "./components/BubbleTestConsole",
+          "specifiers": [
+            "BubbleTestConsole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 166,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/App.tsx": {
+      "filePath": "client/src/App.tsx",
+      "contentHash": "4ba94d2ad97a97f7925c4e17c46213dd17b54a8800e7552f1d82261088d2c047",
+      "functions": [
+        {
+          "name": "App",
+          "params": [],
+          "exported": false,
+          "lineCount": 45
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Router",
+            "Routes",
+            "Route",
+            "Navigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "ThemeProvider",
+            "CssBaseline"
+          ]
+        },
+        {
+          "source": "./theme",
+          "specifiers": [
+            "theme"
+          ]
+        },
+        {
+          "source": "./contexts/AuthContext",
+          "specifiers": [
+            "AuthProvider"
+          ]
+        },
+        {
+          "source": "./context/FeedbackContext",
+          "specifiers": [
+            "FeedbackProvider"
+          ]
+        },
+        {
+          "source": "./components/auth/PrivateRoute",
+          "specifiers": [
+            "PrivateRoute"
+          ]
+        },
+        {
+          "source": "./components/auth/Login",
+          "specifiers": [
+            "Login"
+          ]
+        },
+        {
+          "source": "./components/auth/Register",
+          "specifiers": [
+            "Register"
+          ]
+        },
+        {
+          "source": "./components/layout/Layout",
+          "specifiers": [
+            "Layout"
+          ]
+        },
+        {
+          "source": "./components/dashboard/Dashboard",
+          "specifiers": [
+            "Dashboard"
+          ]
+        },
+        {
+          "source": "./components/templates/TemplateList",
+          "specifiers": [
+            "TemplateList"
+          ]
+        },
+        {
+          "source": "./components/templates/TemplateDetail",
+          "specifiers": [
+            "TemplateDetail"
+          ]
+        },
+        {
+          "source": "./components/templates/TemplateForm",
+          "specifiers": [
+            "TemplateForm"
+          ]
+        },
+        {
+          "source": "./components/apiKeys/APIKeyList",
+          "specifiers": [
+            "APIKeyList"
+          ]
+        },
+        {
+          "source": "./components/apiKeys/APIKeyDetail",
+          "specifiers": [
+            "APIKeyDetail"
+          ]
+        },
+        {
+          "source": "./components/users/UserList",
+          "specifiers": [
+            "UserList"
+          ]
+        },
+        {
+          "source": "./components/users/UserProfile",
+          "specifiers": [
+            "UserProfile"
+          ]
+        },
+        {
+          "source": "./components/logs/LogList",
+          "specifiers": [
+            "LogList"
+          ]
+        },
+        {
+          "source": "./components/bubble/BubbleConfig",
+          "specifiers": [
+            "BubbleConfig"
+          ]
+        },
+        {
+          "source": "./components/bubble/BubbleTestConsole",
+          "specifiers": [
+            "BubbleTestConsole"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 76,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/components/BubbleFieldMapping.test.tsx": {
+      "filePath": "client/src/__tests__/components/BubbleFieldMapping.test.tsx",
+      "contentHash": "b06ae48ed94338ad54b345d91f9cd00b8eace30ca91b68cb8b48a608b54882af",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "@testing-library/react",
+          "specifiers": [
+            "render",
+            "screen",
+            "fireEvent",
+            "waitFor"
+          ]
+        },
+        {
+          "source": "@testing-library/user-event",
+          "specifiers": [
+            "userEvent"
+          ]
+        },
+        {
+          "source": "../../components/bubble/BubbleFieldMapping",
+          "specifiers": [
+            "BubbleFieldMapping"
+          ]
+        },
+        {
+          "source": "../../services/BubbleService",
+          "specifiers": [
+            "BubbleService"
+          ]
+        },
+        {
+          "source": "../mocks/pdfFields",
+          "specifiers": [
+            "mockPDFFields"
+          ]
+        },
+        {
+          "source": "../mocks/bubbleFields",
+          "specifiers": [
+            "mockBubbleFields"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 209,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/components/FieldMappingValidator.test.tsx": {
+      "filePath": "client/src/__tests__/components/FieldMappingValidator.test.tsx",
+      "contentHash": "75d877e4b7c81b07d52a2150a4f4231a672a6cbfd3dfa1330dd0d99b10ee2688",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "@testing-library/react",
+          "specifiers": [
+            "render",
+            "screen",
+            "fireEvent",
+            "waitFor"
+          ]
+        },
+        {
+          "source": "@testing-library/user-event",
+          "specifiers": [
+            "userEvent"
+          ]
+        },
+        {
+          "source": "../../components/validation/FieldMappingValidator",
+          "specifiers": [
+            "FieldMappingValidator"
+          ]
+        },
+        {
+          "source": "../../services/ValidationService",
+          "specifiers": [
+            "ValidationService"
+          ]
+        },
+        {
+          "source": "../mocks/pdfFields",
+          "specifiers": [
+            "mockPDFFields"
+          ]
+        },
+        {
+          "source": "../mocks/bubbleFields",
+          "specifiers": [
+            "mockBubbleFields"
+          ]
+        },
+        {
+          "source": "../mocks/validationResults",
+          "specifiers": [
+            "mockValidationResults"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 236,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/components/PDFFieldDetector.test.tsx": {
+      "filePath": "client/src/__tests__/components/PDFFieldDetector.test.tsx",
+      "contentHash": "09dff3bd3c068c24e662030b9c436259c5de559b4a0c89ae2921fb9bb2eb0983",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "@testing-library/react",
+          "specifiers": [
+            "render",
+            "screen",
+            "fireEvent",
+            "waitFor"
+          ]
+        },
+        {
+          "source": "@testing-library/user-event",
+          "specifiers": [
+            "userEvent"
+          ]
+        },
+        {
+          "source": "../../components/pdf/PDFFieldDetector",
+          "specifiers": [
+            "PDFFieldDetector"
+          ]
+        },
+        {
+          "source": "../../services/PDFService",
+          "specifiers": [
+            "PDFService"
+          ]
+        },
+        {
+          "source": "../mocks/pdfFields",
+          "specifiers": [
+            "mockPDFFields"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 197,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/components/PDFWebhookManager.test.tsx": {
+      "filePath": "client/src/__tests__/components/PDFWebhookManager.test.tsx",
+      "contentHash": "3759d7143fa93737b3c8e31de0df284d9d96fec876a6ab4e353e4801050d8003",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "@testing-library/react",
+          "specifiers": [
+            "render",
+            "screen",
+            "fireEvent",
+            "waitFor"
+          ]
+        },
+        {
+          "source": "@testing-library/user-event",
+          "specifiers": [
+            "userEvent"
+          ]
+        },
+        {
+          "source": "../../components/webhooks/PDFWebhookManager",
+          "specifiers": [
+            "PDFWebhookManager"
+          ]
+        },
+        {
+          "source": "../../services/WebhookService",
+          "specifiers": [
+            "WebhookService"
+          ]
+        },
+        {
+          "source": "../mocks/webhooks",
+          "specifiers": [
+            "mockWebhooks"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 225,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/mocks/bubbleFields.ts": {
+      "filePath": "client/src/__tests__/mocks/bubbleFields.ts",
+      "contentHash": "6deb54e6ae3bb338c2bfa9710686e278d158877acc1c00d00647382650f4b86f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "mockBubbleFields"
+      ],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/mocks/pdfFields.ts": {
+      "filePath": "client/src/__tests__/mocks/pdfFields.ts",
+      "contentHash": "8355ba652ec801539c2db4a3dc319f86bdb3436e9e504392ed27323e929a6617",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "mockPDFFields"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/mocks/validationResults.ts": {
+      "filePath": "client/src/__tests__/mocks/validationResults.ts",
+      "contentHash": "f732d24f6e946e5045bcdb77ef4b2ff123b00ffdef8a550e92317b0acdd95730",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "mockValidationResults"
+      ],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/__tests__/mocks/webhooks.ts": {
+      "filePath": "client/src/__tests__/mocks/webhooks.ts",
+      "contentHash": "270b65f609d58d19fed2bb4d835af108db06b679d1943171d2b86067868b599c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "mockWebhooks"
+      ],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/BubbleDBConfig.js": {
+      "filePath": "client/src/components/BubbleDBConfig.js",
+      "contentHash": "8790a1da5b33ad20a07c3eed81dfed510a2ab223828dffc4639d17ce181d7b56",
+      "functions": [
+        {
+          "name": "BubbleDBConfig",
+          "params": [],
+          "exported": false,
+          "lineCount": 93
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "TextField",
+            "Button",
+            "Typography",
+            "Paper",
+            "CircularProgress",
+            "Alert"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/BubbleIntegrationGuide.js": {
+      "filePath": "client/src/components/BubbleIntegrationGuide.js",
+      "contentHash": "b877ecf2710c4fa20dd066258f393aa01e3d0f754864904fc3fbb29709860c99",
+      "functions": [
+        {
+          "name": "BubbleIntegrationGuide",
+          "params": [],
+          "exported": false,
+          "lineCount": 93
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Paper",
+            "Typography",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Button",
+            "Grid",
+            "Alert"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 110,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/BubbleTestConsole.js": {
+      "filePath": "client/src/components/BubbleTestConsole.js",
+      "contentHash": "838a93f1a9c5c42e83d67d776a1882dc56d4d53d21cb8bbb2e14a9faf72d8bf9",
+      "functions": [
+        {
+          "name": "BubbleTestConsole",
+          "params": [],
+          "exported": false,
+          "lineCount": 141
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Paper",
+            "Typography",
+            "TextField",
+            "Button",
+            "Alert",
+            "Divider",
+            "List",
+            "ListItem",
+            "ListItemText"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 158,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/PDFPreview.js": {
+      "filePath": "client/src/components/PDFPreview.js",
+      "contentHash": "02dd4c44c2b5e85054bc69e6b2ec6b7b1c68859415093cbf50ead63290e12780",
+      "functions": [
+        {
+          "name": "PDFPreview",
+          "params": [],
+          "exported": false,
+          "lineCount": 51
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "react-pdf",
+          "specifiers": [
+            "Document",
+            "Page",
+            "pdfjs"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Paper",
+            "Typography",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "react-pdf/dist/esm/Page/AnnotationLayer.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/apiKeys/APIKeyDetail.tsx": {
+      "filePath": "client/src/components/apiKeys/APIKeyDetail.tsx",
+      "contentHash": "5c2e6b2ea6ded4ef70145abcd49baaf7fa97decf3f4da36c9f71f25033c93f07",
+      "functions": [
+        {
+          "name": "APIKeyDetail",
+          "params": [],
+          "exported": false,
+          "lineCount": 214
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useParams",
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Grid",
+            "Chip",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "Button",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "Alert"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "WarningIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "APIKey"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 243,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/apiKeys/APIKeyList.tsx": {
+      "filePath": "client/src/components/apiKeys/APIKeyList.tsx",
+      "contentHash": "5c29f9385fb33d28ea1d26c763e24dec8a00d4e3aad14f696f2e28df535694ac",
+      "functions": [
+        {
+          "name": "APIKeyList",
+          "params": [],
+          "exported": false,
+          "lineCount": 360
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "IconButton",
+            "Chip",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "Alert",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "OutlinedInput",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "AddIcon",
+            "DeleteIcon",
+            "CopyIcon",
+            "ViewIcon",
+            "HideIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "APIKey",
+            "Permission"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 409,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/auth/Login.tsx": {
+      "filePath": "client/src/components/auth/Login.tsx",
+      "contentHash": "fbcff02e9bebba1ad736f6b0477efcc741edba9ee5bfd7c7bb0eafc9faef9d9e",
+      "functions": [
+        {
+          "name": "Login",
+          "params": [
+            "{ onLogin }"
+          ],
+          "exported": false,
+          "lineCount": 76
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "TextField",
+            "Typography",
+            "Paper",
+            "Container",
+            "Link",
+            "Alert"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 95,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/auth/PrivateRoute.tsx": {
+      "filePath": "client/src/components/auth/PrivateRoute.tsx",
+      "contentHash": "1d43d938cfdacb198de7f79e1cd75afb61855f9335f424a476d13d17ce97d1ee",
+      "functions": [
+        {
+          "name": "PrivateRoute",
+          "params": [
+            "{ \r\n  children,\r\n  requireAdmin = false \r\n}"
+          ],
+          "exported": false,
+          "lineCount": 30
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Navigate",
+            "useLocation"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "CircularProgress",
+            "Box"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/auth/Register.tsx": {
+      "filePath": "client/src/components/auth/Register.tsx",
+      "contentHash": "8c0cf063be2952d7e29177aafa9057792a6beb6437a272d807fc56e69f4281dd",
+      "functions": [
+        {
+          "name": "Register",
+          "params": [
+            "{ onRegister }"
+          ],
+          "exported": false,
+          "lineCount": 127
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "TextField",
+            "Typography",
+            "Paper",
+            "Container",
+            "Link",
+            "Alert",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 150,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/bubble/BubbleFieldMapping.tsx": {
+      "filePath": "client/src/components/bubble/BubbleFieldMapping.tsx",
+      "contentHash": "345abdda9185684ffde73aabf2812119530eb9236a7630a09d98f883b389a093",
+      "functions": [
+        {
+          "name": "BubbleFieldMapping",
+          "params": [
+            "{ pdfFields, onMappingComplete }"
+          ],
+          "exported": true,
+          "lineCount": 188
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Typography",
+            "CircularProgress",
+            "Card",
+            "CardContent",
+            "Button",
+            "Select",
+            "MenuItem",
+            "FormControl",
+            "InputLabel",
+            "Chip",
+            "LinearProgress"
+          ]
+        },
+        {
+          "source": "../../context/FeedbackContext",
+          "specifiers": [
+            "useFeedback"
+          ]
+        }
+      ],
+      "exports": [
+        "BubbleFieldMapping"
+      ],
+      "totalLines": 206,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/bubble/BubbleIntegration.tsx": {
+      "filePath": "client/src/components/bubble/BubbleIntegration.tsx",
+      "contentHash": "3e78b6fbab2474baecb73a5ff7efae95f203ae975a34cc8a298489a293ed6675",
+      "functions": [
+        {
+          "name": "TabPanel",
+          "params": [
+            "props"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "BubbleIntegration",
+          "params": [],
+          "exported": false,
+          "lineCount": 418
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "TextField",
+            "Button",
+            "Grid",
+            "Alert",
+            "Tabs",
+            "Tab",
+            "Paper",
+            "CircularProgress",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "IconButton",
+            "Tooltip",
+            "FormControlLabel",
+            "Switch"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "SaveIcon",
+            "RefreshIcon",
+            "TestIcon",
+            "CopyIcon",
+            "SettingsIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "BubbleConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 474,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/dashboard/Dashboard.tsx": {
+      "filePath": "client/src/components/dashboard/Dashboard.tsx",
+      "contentHash": "552e800dc87756767f7214ffc35c2f21ee2f5b1b34a848b35a22fd3a7e606329",
+      "functions": [
+        {
+          "name": "Dashboard",
+          "params": [],
+          "exported": false,
+          "lineCount": 106
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Container",
+            "Grid",
+            "Paper",
+            "Typography",
+            "Button",
+            "List",
+            "ListItem",
+            "ListItemText",
+            "ListItemIcon"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "DescriptionIcon",
+            "VpnKeyIcon",
+            "AssessmentIcon",
+            "PeopleIcon",
+            "ExitToAppIcon"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 132,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/layout/Layout.tsx": {
+      "filePath": "client/src/components/layout/Layout.tsx",
+      "contentHash": "28f30f07f40724cb1a6457e669e7e45133e072b0464b15730afc94ccb3ce1c94",
+      "functions": [
+        {
+          "name": "Layout",
+          "params": [],
+          "exported": false,
+          "lineCount": 173
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "Outlet",
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "AppBar",
+            "Toolbar",
+            "IconButton",
+            "Typography",
+            "Drawer",
+            "List",
+            "ListItem",
+            "ListItemIcon",
+            "ListItemText",
+            "Avatar",
+            "Menu",
+            "MenuItem",
+            "Divider",
+            "useTheme",
+            "useMediaQuery"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "MenuIcon",
+            "Dashboard",
+            "Description",
+            "VpnKey",
+            "People",
+            "Assessment",
+            "Settings",
+            "Logout",
+            "Person"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 211,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/logs/ActivityLogs.tsx": {
+      "filePath": "client/src/components/logs/ActivityLogs.tsx",
+      "contentHash": "21450f33047402a62a4d05949260de2aaee95aed499a8837a0deac6602558404",
+      "functions": [
+        {
+          "name": "ActivityLogs",
+          "params": [],
+          "exported": false,
+          "lineCount": 261
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Container",
+            "Typography",
+            "Paper",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "IconButton",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "TextField",
+            "Grid",
+            "Chip",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "Button",
+            "Alert"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "VisibilityIcon",
+            "FilterListIcon"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 322,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/logs/LogList.tsx": {
+      "filePath": "client/src/components/logs/LogList.tsx",
+      "contentHash": "28fe4629eab859a46a5bd24e70d073093d25626afd8862dbaf03ee99cad18a05",
+      "functions": [
+        {
+          "name": "LogList",
+          "params": [],
+          "exported": false,
+          "lineCount": 411
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "Chip",
+            "TextField",
+            "Grid",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "Alert",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Tooltip",
+            "Button"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "RefreshIcon",
+            "InfoIcon",
+            "DownloadIcon",
+            "FilterIcon"
+          ]
+        },
+        {
+          "source": "@mui/x-date-pickers/DatePicker",
+          "specifiers": [
+            "DatePicker"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Log",
+            "FilterOptions"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 465,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/pdf/PDFFieldDetector.tsx": {
+      "filePath": "client/src/components/pdf/PDFFieldDetector.tsx",
+      "contentHash": "24c022605612b146f575429a9ab050284be748f0468c968b96290d7a4d868691",
+      "functions": [
+        {
+          "name": "PDFFieldDetector",
+          "params": [],
+          "exported": false,
+          "lineCount": 474
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Button",
+            "Grid",
+            "Alert",
+            "Paper",
+            "CircularProgress",
+            "List",
+            "ListItem",
+            "ListItemText",
+            "ListItemSecondaryAction",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Chip",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "UploadIcon",
+            "DeleteIcon",
+            "EditIcon",
+            "SaveIcon",
+            "RefreshIcon",
+            "SearchIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "PDFDocument",
+            "PDFField"
+          ]
+        },
+        {
+          "source": "react-pdf",
+          "specifiers": [
+            "Document",
+            "Page"
+          ]
+        },
+        {
+          "source": "react-pdf",
+          "specifiers": [
+            "pdfjs"
+          ]
+        },
+        {
+          "source": "../../context/FeedbackContext",
+          "specifiers": [
+            "useFeedback"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 521,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/settings/APIKeyManager.tsx": {
+      "filePath": "client/src/components/settings/APIKeyManager.tsx",
+      "contentHash": "cb9e26944347fd24bad73b87744b024f19667516d74bcab9c4eb87bead741cf4",
+      "functions": [
+        {
+          "name": "APIKeyManager",
+          "params": [],
+          "exported": false,
+          "lineCount": 229
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Container",
+            "Typography",
+            "Button",
+            "Paper",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "Chip",
+            "Alert",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "DeleteIcon",
+            "ContentCopyIcon",
+            "RefreshIcon"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 275,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/templates/TemplateDetail.tsx": {
+      "filePath": "client/src/components/templates/TemplateDetail.tsx",
+      "contentHash": "1d40f29c2214df7afdcbb1e01e3238cfdb57e7e72175036305a36497cb8fc9e7",
+      "functions": [
+        {
+          "name": "TemplateDetail",
+          "params": [],
+          "exported": false,
+          "lineCount": 283
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useParams",
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Grid",
+            "Chip",
+            "Divider",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "EditIcon",
+            "DeleteIcon",
+            "DownloadIcon",
+            "FileCopyIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Template",
+            "PDFField",
+            "TemplateFormData"
+          ]
+        },
+        {
+          "source": "../PDFPreview",
+          "specifiers": [
+            "PDFPreview"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 320,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/templates/TemplateForm.tsx": {
+      "filePath": "client/src/components/templates/TemplateForm.tsx",
+      "contentHash": "f4d5e9b41e57f8653a18201cd17dc3a6a31992c5d79355cfadcf2d00039bcb62",
+      "functions": [
+        {
+          "name": "TemplateForm",
+          "params": [],
+          "exported": false,
+          "lineCount": 320
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate",
+            "useParams"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "Card",
+            "CardContent",
+            "TextField",
+            "Typography",
+            "Grid",
+            "IconButton",
+            "MenuItem",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "Chip",
+            "Alert"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "DeleteIcon",
+            "AddIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Template",
+            "PDFField"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 352,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/templates/TemplateList.tsx": {
+      "filePath": "client/src/components/templates/TemplateList.tsx",
+      "contentHash": "15ba4a33b96ca539d30657132750cd088ff50974ebe7dd6700bb73feca4befa0",
+      "functions": [
+        {
+          "name": "TemplateList",
+          "params": [],
+          "exported": false,
+          "lineCount": 256
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "react-router-dom",
+          "specifiers": [
+            "useNavigate"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Button",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Grid",
+            "IconButton",
+            "Chip",
+            "TextField",
+            "MenuItem",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "AddIcon",
+            "EditIcon",
+            "DeleteIcon",
+            "FileCopyIcon",
+            "SearchIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Template",
+            "FilterOptions"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 287,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/templates/TemplateManager.tsx": {
+      "filePath": "client/src/components/templates/TemplateManager.tsx",
+      "contentHash": "cfd7a1b6b4571c4317298103a427f7e0b5eca8a6d55c22b36e427d46dd034d57",
+      "functions": [
+        {
+          "name": "TemplateManager",
+          "params": [],
+          "exported": false,
+          "lineCount": 264
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Container",
+            "Typography",
+            "Button",
+            "Paper",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "Chip",
+            "Alert"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "DeleteIcon",
+            "EditIcon",
+            "FileCopyIcon",
+            "VisibilityIcon"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 313,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/users/UserList.tsx": {
+      "filePath": "client/src/components/users/UserList.tsx",
+      "contentHash": "78fe3882c7d133eb8b1c2d2eadab9c31e2551da60c221518160184094e5803f5",
+      "functions": [
+        {
+          "name": "UserList",
+          "params": [],
+          "exported": false,
+          "lineCount": 420
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "IconButton",
+            "Chip",
+            "Button",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Alert",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "EditIcon",
+            "BlockIcon",
+            "CheckCircleIcon",
+            "DeleteIcon",
+            "AddIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 461,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/users/UserManagement.tsx": {
+      "filePath": "client/src/components/users/UserManagement.tsx",
+      "contentHash": "97b71b3d5f0c9a4ee091acc659eb18a6be8f1fef2d19e428d3ad9a3c2bf999fa",
+      "functions": [
+        {
+          "name": "UserManagement",
+          "params": [],
+          "exported": false,
+          "lineCount": 323
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Container",
+            "Typography",
+            "Button",
+            "Paper",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Chip",
+            "Alert",
+            "Switch",
+            "FormControlLabel"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "DeleteIcon",
+            "EditIcon",
+            "KeyIcon"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 371,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/users/UserProfile.tsx": {
+      "filePath": "client/src/components/users/UserProfile.tsx",
+      "contentHash": "dca8387d0d595a525fc5cc8d65da057a5dfa0ef36dc3decbd9933ef066e1bed2",
+      "functions": [
+        {
+          "name": "UserProfile",
+          "params": [],
+          "exported": false,
+          "lineCount": 245
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Grid",
+            "TextField",
+            "Button",
+            "Alert",
+            "Divider",
+            "Avatar",
+            "Chip"
+          ]
+        },
+        {
+          "source": "../../contexts/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 264,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/validation/FieldMappingValidator.tsx": {
+      "filePath": "client/src/components/validation/FieldMappingValidator.tsx",
+      "contentHash": "3759ed1cb5dbebbd8b52f916edb365dcd8d4f77e29bb2165a2f0fe1eeea986e5",
+      "functions": [
+        {
+          "name": "FieldMappingValidator",
+          "params": [
+            "{\r\n  pdfFields,\r\n  bubbleFields,\r\n  onValidationComplete,\r\n}"
+          ],
+          "exported": false,
+          "lineCount": 463
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Grid",
+            "Alert",
+            "List",
+            "ListItem",
+            "ListItemText",
+            "Chip",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "Button",
+            "CircularProgress",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "ErrorIcon",
+            "WarningIcon",
+            "SuccessIcon",
+            "InfoIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "PDFField",
+            "BubbleField",
+            "ValidationResult"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 506,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/webhooks/PDFWebhookManager.tsx": {
+      "filePath": "client/src/components/webhooks/PDFWebhookManager.tsx",
+      "contentHash": "4d59f5f464ad6d125d09a37ff8f4dc4d3968dc0270141d3b59e409d5d0cb65fb",
+      "functions": [
+        {
+          "name": "PDFWebhookManager",
+          "params": [
+            "{ pdfFields, onBubbleFieldsDetected }"
+          ],
+          "exported": false,
+          "lineCount": 514
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "Button",
+            "Grid",
+            "Alert",
+            "CircularProgress",
+            "List",
+            "ListItem",
+            "ListItemText",
+            "ListItemSecondaryAction",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "TextField",
+            "FormControl",
+            "InputLabel",
+            "Select",
+            "MenuItem",
+            "Chip",
+            "Tooltip",
+            "Switch",
+            "FormControlLabel"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "AddIcon",
+            "DeleteIcon",
+            "EditIcon",
+            "SaveIcon",
+            "RefreshIcon",
+            "LinkIcon",
+            "TestIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "PDFField",
+            "BubbleField",
+            "Webhook"
+          ]
+        },
+        {
+          "source": "../../context/FeedbackContext",
+          "specifiers": [
+            "useFeedback"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 558,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/webhooks/WebhookManager.tsx": {
+      "filePath": "client/src/components/webhooks/WebhookManager.tsx",
+      "contentHash": "f18a070f4c302d64aaf6c67b8dfa3719d59f0d871efaa94a095f715825213b2c",
+      "functions": [
+        {
+          "name": "WebhookManager",
+          "params": [],
+          "exported": false,
+          "lineCount": 421
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "TextField",
+            "Button",
+            "Grid",
+            "Alert",
+            "IconButton",
+            "Dialog",
+            "DialogTitle",
+            "DialogContent",
+            "DialogActions",
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableContainer",
+            "TableHead",
+            "TableRow",
+            "Paper",
+            "Chip",
+            "Tooltip",
+            "Switch",
+            "FormControlLabel"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "AddIcon",
+            "DeleteIcon",
+            "EditIcon",
+            "TestIcon",
+            "CopyIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Webhook"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 460,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/components/webhooks/WebhookTester.tsx": {
+      "filePath": "client/src/components/webhooks/WebhookTester.tsx",
+      "contentHash": "ce5a88b794a51cd1be760234f9191095b37196a6f03f495a0d927a7b18b38251",
+      "functions": [
+        {
+          "name": "WebhookTester",
+          "params": [],
+          "exported": false,
+          "lineCount": 416
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useState",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Box",
+            "Card",
+            "CardContent",
+            "Typography",
+            "TextField",
+            "Button",
+            "Grid",
+            "Alert",
+            "Paper",
+            "Chip",
+            "CircularProgress",
+            "Accordion",
+            "AccordionSummary",
+            "AccordionDetails",
+            "FormControlLabel",
+            "Switch",
+            "IconButton",
+            "Tooltip"
+          ]
+        },
+        {
+          "source": "@mui/icons-material",
+          "specifiers": [
+            "ExpandMoreIcon",
+            "TestIcon",
+            "CopyIcon",
+            "SaveIcon"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "PDFTemplate"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 460,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/context/FeedbackContext.tsx": {
+      "filePath": "client/src/context/FeedbackContext.tsx",
+      "contentHash": "914edec2272a37651941f664296e362a13c665fd9ad31391998477f447bac2bd",
+      "functions": [
+        {
+          "name": "FeedbackProvider",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 95
+        },
+        {
+          "name": "useFeedback",
+          "params": [],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "createContext",
+            "useContext",
+            "useState"
+          ]
+        },
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "LinearProgress",
+            "Snackbar",
+            "Alert"
+          ]
+        },
+        {
+          "source": "react-toastify",
+          "specifiers": [
+            "toast",
+            "ToastContainer"
+          ]
+        },
+        {
+          "source": "react-toastify/dist/ReactToastify.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [
+        "FeedbackProvider",
+        "useFeedback"
+      ],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/contexts/AuthContext.tsx": {
+      "filePath": "client/src/contexts/AuthContext.tsx",
+      "contentHash": "84e57f19d8c425c820b20060a02c44e80b5e7498f8322ad67ad2555d024e2a67",
+      "functions": [
+        {
+          "name": "useAuth",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "AuthProvider",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 54
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "createContext",
+            "useState",
+            "useContext",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "useAuth",
+        "AuthProvider"
+      ],
+      "totalLines": 84,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/index.js": {
+      "filePath": "client/src/index.js",
+      "contentHash": "e14f0de6ccceaf9b1b3f2ae1e110bf10f00de7f83cdf47ec0607f7253ca21d9c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        },
+        {
+          "source": "react-dom/client",
+          "specifiers": [
+            "ReactDOM"
+          ]
+        },
+        {
+          "source": "./App",
+          "specifiers": [
+            "App"
+          ]
+        },
+        {
+          "source": "@mui/material/styles",
+          "specifiers": [
+            "ThemeProvider",
+            "createTheme"
+          ]
+        },
+        {
+          "source": "@mui/material/CssBaseline",
+          "specifiers": [
+            "CssBaseline"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/theme.ts": {
+      "filePath": "client/src/theme.ts",
+      "contentHash": "252eaf3c11b106b13d1115e590bada4925822da56a4898b64f8aa6e1a4d4fe25",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@mui/material/styles",
+          "specifiers": [
+            "createTheme"
+          ]
+        }
+      ],
+      "exports": [
+        "theme"
+      ],
+      "totalLines": 113,
+      "hasStructuralAnalysis": true
+    },
+    "client/src/types/index.ts": {
+      "filePath": "client/src/types/index.ts",
+      "contentHash": "e0709bdea2ea472c856cce4792a7365f4cdc42dff73472bba656e426a1e2d7ba",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 105,
+      "hasStructuralAnalysis": true
+    },
+    "client/tsconfig.json": {
+      "filePath": "client/tsconfig.json",
+      "contentHash": "d6308bb069522b37364d282eb4dc051bee952af4f538cc446b93a5cdff408d1b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "index.html": {
+      "filePath": "index.html",
+      "contentHash": "10fb4aa409216d063927625f16f348259bbe8ed9f7f3fcafde45010dc64e1223",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "107e9a74ca9595f6ff46228d793227ab86057ba3518cc757f04ace797b8c6b14",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": false
+    },
+    "server.js": {
+      "filePath": "server.js",
+      "contentHash": "e6cf66fd5b9ae65ecf7cf31afada169fff67da8bdc934da606944258e8a18c8b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 237,
+      "hasStructuralAnalysis": true
+    },
+    "server/package.json": {
+      "filePath": "server/package.json",
+      "contentHash": "c39510738e8aff820bef570b68f4d1aa1a9e68bfb0878f5a1840b796e26e63f3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": false
+    },
+    "server/src/__tests__/integration/field-mapping.test.ts": {
+      "filePath": "server/src/__tests__/integration/field-mapping.test.ts",
+      "contentHash": "de6effcf336dd320fe8c620ca0ef0278dd44bec483360023904984f49f9bdf83",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "supertest",
+          "specifiers": [
+            "request"
+          ]
+        },
+        {
+          "source": "mongodb-memory-server",
+          "specifiers": [
+            "MongoMemoryServer"
+          ]
+        },
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose"
+          ]
+        },
+        {
+          "source": "../../app",
+          "specifiers": [
+            "app"
+          ]
+        },
+        {
+          "source": "../../models/User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "../../models/Template",
+          "specifiers": [
+            "Template"
+          ]
+        },
+        {
+          "source": "../../models/BubbleConfig",
+          "specifiers": [
+            "BubbleConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 294,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/__tests__/integration/pdf.test.ts": {
+      "filePath": "server/src/__tests__/integration/pdf.test.ts",
+      "contentHash": "62aa60a585b6f0e70abff066e7d00da6118a7ba30320769fbf4c531823826ea0",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "supertest",
+          "specifiers": [
+            "request"
+          ]
+        },
+        {
+          "source": "mongodb-memory-server",
+          "specifiers": [
+            "MongoMemoryServer"
+          ]
+        },
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose"
+          ]
+        },
+        {
+          "source": "../../app",
+          "specifiers": [
+            "app"
+          ]
+        },
+        {
+          "source": "../../models/User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "../../models/Template",
+          "specifiers": [
+            "Template"
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            "path"
+          ]
+        },
+        {
+          "source": "fs",
+          "specifiers": [
+            "fs"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 320,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/controllers/apiKeyController.ts": {
+      "filePath": "server/src/controllers/apiKeyController.ts",
+      "contentHash": "50fd0dcbe572249583ae222cb5c6e615a469d38c25ab8b9e4ba38b8131fafd84",
+      "functions": [
+        {
+          "name": "createAPIKey",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "getAllAPIKeys",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "getAPIKey",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "updateAPIKey",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 37
+        },
+        {
+          "name": "revokeAPIKey",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 30
+        },
+        {
+          "name": "validateAPIKey",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "../models/APIKey",
+          "specifiers": [
+            "APIKey"
+          ]
+        },
+        {
+          "source": "../middleware/errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        },
+        {
+          "source": "../utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        }
+      ],
+      "exports": [
+        "createAPIKey",
+        "getAllAPIKeys",
+        "getAPIKey",
+        "updateAPIKey",
+        "revokeAPIKey",
+        "validateAPIKey"
+      ],
+      "totalLines": 179,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/controllers/authController.ts": {
+      "filePath": "server/src/controllers/authController.ts",
+      "contentHash": "8aad60bb3c3b3209439854ff80cf31b9c621a4796515cbe7ddd040ff141bd90e",
+      "functions": [
+        {
+          "name": "generateToken",
+          "params": [
+            "userId"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "register",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 44
+        },
+        {
+          "name": "login",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 43
+        },
+        {
+          "name": "protect",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 34
+        },
+        {
+          "name": "restrictTo",
+          "params": [
+            "...roles"
+          ],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "jsonwebtoken",
+          "specifiers": [
+            "jwt"
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "../middleware/errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        },
+        {
+          "source": "../utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        }
+      ],
+      "exports": [
+        "register",
+        "login",
+        "protect",
+        "restrictTo"
+      ],
+      "totalLines": 148,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/controllers/logController.ts": {
+      "filePath": "server/src/controllers/logController.ts",
+      "contentHash": "d549da1e54e9c090d47c5f5a5046edd55510363754c5127096f9400dea1af988",
+      "functions": [
+        {
+          "name": "createLog",
+          "params": [
+            "action",
+            "status",
+            "userId",
+            "details"
+          ],
+          "exported": true,
+          "lineCount": 25
+        },
+        {
+          "name": "getLogs",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 39
+        },
+        {
+          "name": "getLog",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 22
+        },
+        {
+          "name": "logMiddleware",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 37
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "../models/Log",
+          "specifiers": [
+            "Log"
+          ]
+        },
+        {
+          "source": "../middleware/errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        }
+      ],
+      "exports": [
+        "createLog",
+        "getLogs",
+        "getLog",
+        "logMiddleware"
+      ],
+      "totalLines": 131,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/controllers/templateController.ts": {
+      "filePath": "server/src/controllers/templateController.ts",
+      "contentHash": "5bfe052e1c1dc5b428848d33859d61c6d61f5c298a0e4cf8daef211bf2186b16",
+      "functions": [
+        {
+          "name": "uploadTemplate",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 49
+        },
+        {
+          "name": "getAllTemplates",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 21
+        },
+        {
+          "name": "getTemplate",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "updateTemplate",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 38
+        },
+        {
+          "name": "deleteTemplate",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 31
+        },
+        {
+          "name": "fillTemplate",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 56
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "pdf-lib",
+          "specifiers": [
+            "PDFDocument"
+          ]
+        },
+        {
+          "source": "fs/promises",
+          "specifiers": [
+            "fs"
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            "path"
+          ]
+        },
+        {
+          "source": "../models/Template",
+          "specifiers": [
+            "Template"
+          ]
+        },
+        {
+          "source": "../middleware/errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        },
+        {
+          "source": "../utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        }
+      ],
+      "exports": [
+        "uploadTemplate",
+        "getAllTemplates",
+        "getTemplate",
+        "updateTemplate",
+        "deleteTemplate",
+        "fillTemplate"
+      ],
+      "totalLines": 246,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/controllers/userController.ts": {
+      "filePath": "server/src/controllers/userController.ts",
+      "contentHash": "3aac53739ea85dc390a49dd493584b67c0527c40099068db877c95911307f856",
+      "functions": [
+        {
+          "name": "getAllUsers",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "getUser",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 21
+        },
+        {
+          "name": "updateUser",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 33
+        },
+        {
+          "name": "deleteUser",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 25
+        },
+        {
+          "name": "updateCurrentUser",
+          "params": [
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 49
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "../middleware/errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        },
+        {
+          "source": "../utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        }
+      ],
+      "exports": [
+        "getAllUsers",
+        "getUser",
+        "updateUser",
+        "deleteUser",
+        "updateCurrentUser"
+      ],
+      "totalLines": 156,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/index.ts": {
+      "filePath": "server/src/index.ts",
+      "contentHash": "2f316159228529c1156b8563d301f939f90fb4bc602ef0423701f5d6178dfd3f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "cors",
+          "specifiers": [
+            "cors"
+          ]
+        },
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose"
+          ]
+        },
+        {
+          "source": "dotenv",
+          "specifiers": [
+            "dotenv"
+          ]
+        },
+        {
+          "source": "./middleware/errorHandler",
+          "specifiers": [
+            "errorHandler"
+          ]
+        },
+        {
+          "source": "./utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        },
+        {
+          "source": "./routes/auth",
+          "specifiers": [
+            "authRoutes"
+          ]
+        },
+        {
+          "source": "./routes/templates",
+          "specifiers": [
+            "templateRoutes"
+          ]
+        },
+        {
+          "source": "./routes/apiKeys",
+          "specifiers": [
+            "apiKeyRoutes"
+          ]
+        },
+        {
+          "source": "./routes/users",
+          "specifiers": [
+            "userRoutes"
+          ]
+        },
+        {
+          "source": "./routes/logs",
+          "specifiers": [
+            "logRoutes"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/middleware/errorHandler.ts": {
+      "filePath": "server/src/middleware/errorHandler.ts",
+      "contentHash": "7f4a36a8f69c4f1177bb34eacb3cf3a1d3c32f6934ec69b7aa66655b5bcc82c4",
+      "functions": [
+        {
+          "name": "errorHandler",
+          "params": [
+            "err",
+            "req",
+            "res",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppError",
+          "methods": [
+            "constructor"
+          ],
+          "properties": [
+            "statusCode",
+            "status",
+            "isOperational"
+          ],
+          "exported": true,
+          "lineCount": 14
+        }
+      ],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "../utils/logger",
+          "specifiers": [
+            "logger"
+          ]
+        }
+      ],
+      "exports": [
+        "AppError",
+        "errorHandler"
+      ],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/middleware/logger.ts": {
+      "filePath": "server/src/middleware/logger.ts",
+      "contentHash": "7ba70b8f4a1eac687b7f06f36682556b8a91956845da3061b32be00577c72aee",
+      "functions": [
+        {
+          "name": "loggerMiddleware",
+          "params": [],
+          "exported": true,
+          "lineCount": 51
+        },
+        {
+          "name": "determineAction",
+          "params": [
+            "path",
+            "method"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 45
+        },
+        {
+          "name": "determineStatus",
+          "params": [
+            "statusCode"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "sanitizeBody",
+          "params": [
+            "body"
+          ],
+          "returnType": "any",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "logError",
+          "params": [
+            "error",
+            "req",
+            "res",
+            "user"
+          ],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "../models/Log",
+          "specifiers": [
+            "Log",
+            "LogDocument"
+          ]
+        },
+        {
+          "source": "../models/User",
+          "specifiers": [
+            "User"
+          ]
+        }
+      ],
+      "exports": [
+        "loggerMiddleware",
+        "logError"
+      ],
+      "totalLines": 167,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/middleware/validation.ts": {
+      "filePath": "server/src/middleware/validation.ts",
+      "contentHash": "d8cf615e936ca34fd730e1ff5b900d6070d0445c7c240fb8443e1e403b001c9b",
+      "functions": [
+        {
+          "name": "handleValidationErrors",
+          "params": [
+            "req",
+            "_res",
+            "next"
+          ],
+          "exported": false,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request",
+            "Response",
+            "NextFunction"
+          ]
+        },
+        {
+          "source": "express-validator",
+          "specifiers": [
+            "body",
+            "validationResult"
+          ]
+        },
+        {
+          "source": "./errorHandler",
+          "specifiers": [
+            "AppError"
+          ]
+        }
+      ],
+      "exports": [
+        "validateRegistration",
+        "validateLogin",
+        "validateUserUpdate",
+        "validateTemplate",
+        "validateTemplateUpdate",
+        "validateAPIKeyCreate",
+        "validateAPIKeyUpdate"
+      ],
+      "totalLines": 171,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/models/APIKey.ts": {
+      "filePath": "server/src/models/APIKey.ts",
+      "contentHash": "da54c0b1680233346c69013aef02e7c13168d09e8204cf087f784a8e2ed57163",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose",
+            "Document",
+            "Schema"
+          ]
+        },
+        {
+          "source": "crypto",
+          "specifiers": [
+            "crypto"
+          ]
+        }
+      ],
+      "exports": [
+        "APIKey"
+      ],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/models/Log.ts": {
+      "filePath": "server/src/models/Log.ts",
+      "contentHash": "9fef4a513600dada4ce8051915a08d4edefadd29745408c895fb80e572158d2e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose",
+            "Document",
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [
+        "Log"
+      ],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/models/Template.ts": {
+      "filePath": "server/src/models/Template.ts",
+      "contentHash": "9cc1349bda423fcdcb3d0fccbdc243512ac2e92d748bb86f244f056010548c9e",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose",
+            "Document",
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [
+        "Template"
+      ],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/models/User.ts": {
+      "filePath": "server/src/models/User.ts",
+      "contentHash": "9c44b7ad57abaf36bc5f68af0728ad8627ee2c36a47da544dfa43ac55b450a8d",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "mongoose",
+            "Document",
+            "Schema"
+          ]
+        },
+        {
+          "source": "bcryptjs",
+          "specifiers": [
+            "bcrypt"
+          ]
+        }
+      ],
+      "exports": [
+        "User"
+      ],
+      "totalLines": 81,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/apiKeys.ts": {
+      "filePath": "server/src/routes/apiKeys.ts",
+      "contentHash": "c3f7718b3078c7c781d88bdff712072c07d0022138f4a5feeb56851f54c2e8f2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "../controllers/apiKeyController",
+          "specifiers": [
+            "createAPIKey",
+            "getAllAPIKeys",
+            "getAPIKey",
+            "updateAPIKey",
+            "revokeAPIKey"
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            "protect"
+          ]
+        },
+        {
+          "source": "../middleware/validation",
+          "specifiers": [
+            "validateAPIKeyCreate",
+            "validateAPIKeyUpdate"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/auth.ts": {
+      "filePath": "server/src/routes/auth.ts",
+      "contentHash": "4bbddab24e0daf5494ca8e69ec0bac5659e2f46e2ac5b101db449bb0f9d8f3bf",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            "register",
+            "login"
+          ]
+        },
+        {
+          "source": "../middleware/validation",
+          "specifiers": [
+            "validateRegistration",
+            "validateLogin"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/bubble.ts": {
+      "filePath": "server/src/routes/bubble.ts",
+      "contentHash": "d7f8f2bc477f11fb4bc87ebe43df8cf71364fae8f4edb964a307fe9a24ebf7ee",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "express-validator",
+          "specifiers": [
+            "body",
+            "param"
+          ]
+        },
+        {
+          "source": "../middleware/validate",
+          "specifiers": [
+            "validateRequest"
+          ]
+        },
+        {
+          "source": "../middleware/auth",
+          "specifiers": [
+            "authenticate"
+          ]
+        },
+        {
+          "source": "../models/BubbleConfig",
+          "specifiers": [
+            "BubbleConfig"
+          ]
+        },
+        {
+          "source": "../models/FieldMapping",
+          "specifiers": [
+            "FieldMapping"
+          ]
+        },
+        {
+          "source": "../models/Template",
+          "specifiers": [
+            "Template"
+          ]
+        },
+        {
+          "source": "../middleware/logger",
+          "specifiers": [
+            "logError"
+          ]
+        },
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 310,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/field-mapping.ts": {
+      "filePath": "server/src/routes/field-mapping.ts",
+      "contentHash": "f3346b4114aad018018085fbc3e4b0e0cec7361d3960edfdba7cd9b3205e38a6",
+      "functions": [
+        {
+          "name": "validateFieldTypes",
+          "params": [
+            "pdfField",
+            "bubbleField"
+          ],
+          "exported": false,
+          "lineCount": 28
+        },
+        {
+          "name": "validateFieldConstraints",
+          "params": [
+            "pdfField",
+            "bubbleField"
+          ],
+          "exported": false,
+          "lineCount": 46
+        },
+        {
+          "name": "findSimilarFields",
+          "params": [
+            "sourceField",
+            "targetFields"
+          ],
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "calculateStringSimilarity",
+          "params": [
+            "str1",
+            "str2"
+          ],
+          "returnType": "number",
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "generateMissingFieldFix",
+          "params": [
+            "result",
+            "bubbleFields"
+          ],
+          "exported": false,
+          "lineCount": 34
+        },
+        {
+          "name": "generateTypeMismatchFix",
+          "params": [
+            "result"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "generateConstraintMismatchFix",
+          "params": [
+            "result"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "generateValidationMismatchFix",
+          "params": [
+            "result"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "generateOptionsMismatchFix",
+          "params": [
+            "result"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "getCompatibleType",
+          "params": [
+            "pdfType"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "applyFix",
+          "params": [
+            "fix"
+          ],
+          "exported": false,
+          "lineCount": 23
+        },
+        {
+          "name": "updateFieldMapping",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "createBubbleField",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "updateFieldType",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "updateFieldConstraints",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "updateFieldValidation",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "updateFieldOptions",
+          "params": [
+            "data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "express-validator",
+          "specifiers": [
+            "body"
+          ]
+        },
+        {
+          "source": "../middleware/validate",
+          "specifiers": [
+            "validateRequest"
+          ]
+        },
+        {
+          "source": "../middleware/auth",
+          "specifiers": [
+            "authenticate"
+          ]
+        },
+        {
+          "source": "../middleware/logger",
+          "specifiers": [
+            "logError"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 467,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/logs.ts": {
+      "filePath": "server/src/routes/logs.ts",
+      "contentHash": "d1ec05bde7e0a94a9b4b1457a34f2ac7cdcfa3f98908f1eada652a0271dac0c6",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "../controllers/logController",
+          "specifiers": [
+            "getLogs",
+            "getLog"
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            "protect",
+            "restrictTo"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/pdf.ts": {
+      "filePath": "server/src/routes/pdf.ts",
+      "contentHash": "fcdf2671de5db78b6d8142e514509c1b756a1a883d7af2f8fe447abc58bee5d3",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "express-validator",
+          "specifiers": [
+            "body",
+            "param"
+          ]
+        },
+        {
+          "source": "multer",
+          "specifiers": [
+            "multer"
+          ]
+        },
+        {
+          "source": "../middleware/validate",
+          "specifiers": [
+            "validateRequest"
+          ]
+        },
+        {
+          "source": "../middleware/auth",
+          "specifiers": [
+            "authenticate"
+          ]
+        },
+        {
+          "source": "pdf-lib",
+          "specifiers": [
+            "PDFDocument"
+          ]
+        },
+        {
+          "source": "../models/Template",
+          "specifiers": [
+            "Template"
+          ]
+        },
+        {
+          "source": "../middleware/logger",
+          "specifiers": [
+            "logError"
+          ]
+        },
+        {
+          "source": "fs",
+          "specifiers": [
+            "fs"
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            "path"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 321,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/templates.ts": {
+      "filePath": "server/src/routes/templates.ts",
+      "contentHash": "f1b8a998551793a879ce7da143681176300e98b441b44ca49d87d7bb78d64c66",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "multer",
+          "specifiers": [
+            "multer"
+          ]
+        },
+        {
+          "source": "../controllers/templateController",
+          "specifiers": [
+            "uploadTemplate",
+            "getAllTemplates",
+            "getTemplate",
+            "updateTemplate",
+            "deleteTemplate",
+            "fillTemplate"
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            "protect"
+          ]
+        },
+        {
+          "source": "../middleware/validation",
+          "specifiers": [
+            "validateTemplate",
+            "validateTemplateUpdate"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/users.ts": {
+      "filePath": "server/src/routes/users.ts",
+      "contentHash": "1291c08e32bfd406f38ab99ef4b5e0c084376cbf8c68c4f615b1c3731173ab83",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "../controllers/userController",
+          "specifiers": [
+            "getAllUsers",
+            "getUser",
+            "updateUser",
+            "deleteUser",
+            "updateCurrentUser"
+          ]
+        },
+        {
+          "source": "../controllers/authController",
+          "specifiers": [
+            "protect",
+            "restrictTo"
+          ]
+        },
+        {
+          "source": "../middleware/validation",
+          "specifiers": [
+            "validateUserUpdate"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/routes/webhooks.ts": {
+      "filePath": "server/src/routes/webhooks.ts",
+      "contentHash": "1ef6eb85e2ed74483bae79540c18445a990bc656ecfec043add0a69c4b8ea2c5",
+      "functions": [
+        {
+          "name": "transformFields",
+          "params": [
+            "fields",
+            "mapping"
+          ],
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "transformValue",
+          "params": [
+            "value",
+            "transformation"
+          ],
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "detectBubbleFields",
+          "params": [
+            "bubbleConfig",
+            "pdfFields"
+          ],
+          "returnType": "Promise<any[]>",
+          "exported": false,
+          "lineCount": 34
+        },
+        {
+          "name": "mapToBubbleType",
+          "params": [
+            "pdfType"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "express"
+          ]
+        },
+        {
+          "source": "express-validator",
+          "specifiers": [
+            "body",
+            "param"
+          ]
+        },
+        {
+          "source": "../middleware/validate",
+          "specifiers": [
+            "validateRequest"
+          ]
+        },
+        {
+          "source": "../middleware/auth",
+          "specifiers": [
+            "authenticate"
+          ]
+        },
+        {
+          "source": "../models/Webhook",
+          "specifiers": [
+            "Webhook"
+          ]
+        },
+        {
+          "source": "../middleware/logger",
+          "specifiers": [
+            "logError"
+          ]
+        },
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        },
+        {
+          "source": "../models/BubbleConfig",
+          "specifiers": [
+            "BubbleConfig"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 312,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/types/index.ts": {
+      "filePath": "server/src/types/index.ts",
+      "contentHash": "8f3703a88eb879ac2624b46cba1202e74f0fecaf8bdeef34920e6847228dab98",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "express",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "mongoose",
+          "specifiers": [
+            "Document"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "server/src/utils/logger.ts": {
+      "filePath": "server/src/utils/logger.ts",
+      "contentHash": "534b4bc53282e47b4d7c8bb93766627ef231bff4e9de2328ab56c7370c51ebc7",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "winston",
+          "specifiers": [
+            "winston"
+          ]
+        }
+      ],
+      "exports": [
+        "logger"
+      ],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "server/tsconfig.json": {
+      "filePath": "server/tsconfig.json",
+      "contentHash": "54faf90853d242f9bdad4ba24e69878d10b30e4852f920d84d8641232edeb7c6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": false
+    },
+    "styles.css": {
+      "filePath": "styles.css",
+      "contentHash": "de72333634d082f163e55440b368a3037235e400f99792f047ad230986b7a888",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 269,
+      "hasStructuralAnalysis": false
+    }
+  }
+}
